@@ -102,3 +102,17 @@ body {
     margin-left: 5%;
     color: lightgray;
 }
+
+.btn-signup {
+    background-color: #c66c38;
+    color: #fff;
+    margin-top: 5px;
+    font-size: small;
+    text-transform: uppercase;
+}
+
+.btn-signup:hover,
+.btn-signup:active {
+    background-color: #fff;
+    color: #445261;
+}
