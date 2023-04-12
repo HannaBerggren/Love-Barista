@@ -117,6 +117,19 @@ body {
     color: #445261;
 }
 
+.link {
+    color: #c66c38;
+    text-decoration: none;
+}
+
+.link:hover,
+.link:active {
+    color: #445261;
+    text-decoration: underline;
+}
+
+
+
 .btn-like {
     color: #d9773f;
     border: none;
