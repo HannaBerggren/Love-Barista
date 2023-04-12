@@ -116,3 +116,16 @@ body {
     background-color: #fff;
     color: #445261;
 }
+
+.btn-like {
+    color: #d9773f;
+    border: none;
+    background: transparent;
+}
+
+.btn-like:hover,
+.btn-like:active {
+    color: #c66c38;
+    background: transparent;
+    border: none;
+}
