@@ -82,3 +82,23 @@ body {
     transform: skew(15deg);
     z-index: 100;
 }
+
+.post-link {
+    text-decoration: none;
+    color: #101512;
+}
+
+.post-link:hover,
+.page-link {
+    color: #c66c38;
+}
+
+.post-title {
+    margin-top: 20%;
+    margin-left: 5%;
+}
+
+.post-subtitle {
+    margin-left: 5%;
+    color: lightgray;
+}
