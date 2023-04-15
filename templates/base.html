@@ -56,6 +56,18 @@
             </div>
         </div>
     </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                {% for message in messages %}
+                <div class="alert {{ message.tags }} alert-dismissible fade show" id="msg" role="alert">
+                    {{ message | safe }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
 
     <main class="flex-shrink-0 main-bg">
 
@@ -73,6 +85,12 @@
             <a style="color: #ca7aca" href="https://instagram.com" target="_blank" rel="noopener" role="button"><i class="fab fa-instagram-square fa-lg"></i></a>
             <a style="color: #ead7b4" href="https://www.dropcoffee.com/" target="_blank" rel="noopener" role="button"><i class="fab fa-google fa-lg"></i></a>
     </footer>
-
+    <script>
+        setTimeout(function () {
+            let messages = document.getElementById('msg');
+            let alert = new bootstrap.Alert(messages);
+            alert.close();
+        }, 3000);
+    </script>
 </body>
 </html>
