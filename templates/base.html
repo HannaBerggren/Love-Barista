@@ -49,7 +49,7 @@
                     </li>
                     {% endif %}
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Add a Post</a>
+                        <a class="nav-link active" aria-current="page" href="{% url 'user-page' %}" aria-label="Go to the user page"><i class="fa-solid fa-user"></i> {{ user.username }}</a>
                     </li>
 
                 </ul>

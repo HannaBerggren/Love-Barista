@@ -150,3 +150,10 @@ class AddPost(LoginRequiredMixin, SuccessMessageMixin, CreateView):
         form.instance.author = self.request.user
         form.slug = slugify(form.instance.title)
         return super().form_valid(form)
+
+class User(LoginRequiredMixin, generic.ListView):
+    """
+    Render the user page
+    """
+    model = Post
+    template_name = "user_page.html"
