@@ -3,7 +3,9 @@ from django.views import generic, View
 from django.http import HttpResponseRedirect
 from .models import Post
 from .forms import CommentForm
-from django.views.generic import DeleteView
+from django.views.generic import DeleteView, UpdateView
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.decorators import login_required
 
 
 class PostList(generic.ListView):
@@ -96,3 +98,31 @@ class DeletePost(generic.DeleteView):
         of the post to the database
         """
         return reverse("user-post-list")
+
+@login_required()
+def update_post(request, slug):
+    """
+    Users can update their blog post that they have created
+    """
+    post = get_object_or_404(Post, slug=slug)
+    if request.user.id == post.author.id:
+        if request.method == "POST":
+            form = UpdatePostForm(request.POST, request.FILES, instance=post)
+            if form.is_valid():
+                post = form.save(commit=False)
+                post.author = request.user
+                post.slug = slugify(post.title)
+                post.status = 1
+                form.save()
+                messages.success(request, "Your post updated successfully!")
+                return redirect(reverse("user-post-list"))
+            else:
+                messages.error(request, "Failed to update the post.")
+        else:
+            form = UpdatePostForm(instance=post)
+    else:
+        messages.error(request, "Sorry, This is not your post.")
+
+    template = ("update_post.html",)
+    context = {"form": form, "post": post}
+    return render(request, template, context)
