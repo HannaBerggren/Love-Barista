@@ -1,8 +1,26 @@
 from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
+from django_summernote.widgets import SummernoteWidget
+
 
 STATUS = ((0, "Draft"), (1, "Published"))
+
+class Destination(models.Model):
+    """
+    Model for destination place
+    """
+    title = models.CharField(max_length=100, blank=True)
+    destination_image = CloudinaryField("image", default="placeholder")
+    slug = models.SlugField(max_length=100, unique=True, default="", null=True)
+    excerpt = models.TextField(blank=True)
+
+    class Meta:
+        verbose_name = "Destination"
+        verbose_name_plural = "Destinations"
+
+    def __str__(self):
+        return self.title
 
 class Post(models.Model):
     title = models.CharField(max_length=200, unique=True)

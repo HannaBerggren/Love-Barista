@@ -2,11 +2,14 @@ from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.http import HttpResponseRedirect
 from .models import Post
-from .forms import CommentForm
-from django.views.generic import DeleteView, UpdateView
+from django.views.generic import CreateView, UpdateView, DeleteView
+from django.contrib import messages
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.decorators import login_required
-
+from .forms import AddPostForm, UpdatePostForm
+from .forms import CommentForm
+from .models import Comment
+from django.contrib.messages.views import SuccessMessageMixin
 
 class PostList(generic.ListView):
     model = Post
@@ -126,3 +129,24 @@ def update_post(request, slug):
     template = ("update_post.html",)
     context = {"form": form, "post": post}
     return render(request, template, context)
+
+class AddPost(LoginRequiredMixin, SuccessMessageMixin, CreateView):
+    """
+    Add a blog post only when user is logged in
+    """
+    model = Post
+    form_class = AddPostForm
+    template_name = "add_post.html"
+    success_message = "You have added a new post, It's awaiting approval!"
+
+    def get_success_url(self):
+        """
+        Set the reverse url for the successful addition
+        of the post to the database
+        """
+        return reverse("user-page")
+
+    def form_valid(self, form):
+        form.instance.author = self.request.user
+        form.slug = slugify(form.instance.title)
+        return super().form_valid(form)
