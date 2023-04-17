@@ -3,6 +3,7 @@ from django.views import generic, View
 from django.http import HttpResponseRedirect
 from .models import Post
 from .forms import CommentForm
+from django.views.generic import DeleteView
 
 
 class PostList(generic.ListView):
@@ -76,3 +77,22 @@ class PostLike(View):
             post.likes.add(request.user)
 
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+
+class DeletePost(generic.DeleteView):
+    """
+    Class to allow to delete a post
+    """
+    model = Post
+    template_name = "delete_post.html"
+    success_message = "Post was deleted successfully."
+
+    def delete(self, request, *args, **kwargs):
+        messages.warning(self.request, self.success_message)
+        return super(DeletePost, self).delete(request, *args, **kwargs)
+
+    def get_success_url(self):
+        """
+        Set the reverse url for the successful delete
+        of the post to the database
+        """
+        return reverse("user-post-list")
