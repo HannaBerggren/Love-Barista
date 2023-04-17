@@ -11,11 +11,13 @@ from .forms import CommentForm
 from .models import Comment
 from django.contrib.messages.views import SuccessMessageMixin
 
+
 class PostList(generic.ListView):
     model = Post
     queryset = Post.objects.filter(status=1).order_by("-created_on")
     template_name = "index.html"
     paginate_by = 6
+
 
 class PostDetail(View):
 
@@ -83,6 +85,7 @@ class PostLike(View):
 
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
+
 class DeletePost(generic.DeleteView):
     """
     Class to allow to delete a post
@@ -130,6 +133,7 @@ def update_post(request, slug):
     context = {"form": form, "post": post}
     return render(request, template, context)
 
+
 class AddPost(LoginRequiredMixin, SuccessMessageMixin, CreateView):
     """
     Add a blog post only when user is logged in
@@ -151,9 +155,25 @@ class AddPost(LoginRequiredMixin, SuccessMessageMixin, CreateView):
         form.slug = slugify(form.instance.title)
         return super().form_valid(form)
 
+
 class User(LoginRequiredMixin, generic.ListView):
     """
     Render the user page
     """
     model = Post
     template_name = "user_page.html"
+
+
+class UserPostList(LoginRequiredMixin, generic.ListView):
+    """
+    Display all posts of a particular logged in user in one place
+    """
+    model = Post
+    author = Post.author
+    template_name = "user_post_list.html"
+
+    def get_queryset(self, *args, **kwargs):
+        return Post.objects.filter(
+            author=self.request.user, status=1).order_by(
+            "-created_on"
+        )
