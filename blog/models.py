@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 from django_summernote.widgets import SummernoteWidget
 from django.urls import reverse
+from django.utils.text import slugify
 
 
 STATUS = ((0, "Draft"), (1, "Published"))

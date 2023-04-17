@@ -10,6 +10,7 @@ from .forms import AddPostForm, UpdatePostForm
 from .forms import CommentForm
 from .models import Comment
 from django.contrib.messages.views import SuccessMessageMixin
+from django.utils.text import slugify
 
 
 class PostList(generic.ListView):
@@ -151,8 +152,10 @@ class AddPost(LoginRequiredMixin, SuccessMessageMixin, CreateView):
         return reverse("user-page")
 
     def form_valid(self, form):
-        form.instance.author = self.request.user
-        form.slug = slugify(form.instance.title)
+        post = form.save(commit=False)
+        post.author = self.request.user
+        post.slug = slugify(post.title)
+        form.save()
         return super().form_valid(form)
 
 
