@@ -142,3 +142,7 @@ body {
     background: transparent;
     border: none;
 }
+
+.form-group {
+    background-color: #c66c38;
+}

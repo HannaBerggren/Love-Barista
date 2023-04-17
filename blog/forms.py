@@ -20,7 +20,6 @@ class AddPostForm(forms.ModelForm):
         model = Post
         fields = (
             "title",
-            "excerpt",
             "content",
             "featured_image",
         )

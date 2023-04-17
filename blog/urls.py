@@ -13,4 +13,8 @@ urlpatterns = [
         views.DeletePost.as_view(),
         name="delete-post",
     ),
+    path(
+        "user_post_list/", views.UserPostList.as_view(), name="user-post-list"
+    ),
+    
 ]

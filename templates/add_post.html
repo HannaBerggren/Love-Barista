@@ -4,7 +4,7 @@
 {% block content %}
 <!-- Only allows users who are log in -->
 {% if user.is_authenticated %}
-<div class="container-fluid p-2 bg-success text-dark bg-opacity-10" id="add-post">
+<div class="container-fluid p-2 bg-#5B818E text-dark bg-opacity-10" id="add-post">
     <div class="row justify-content-center">
         <div class="col-sm-10 mt-1">
             <h2 class="mt-3 text-center">Hi <span>{{ user }}</span></h2>
@@ -20,7 +20,7 @@
                     {{ form | crispy }}
                     {{ post.content | safe }}
                     {{ post.ideal_duration | safe }}
-                    <button type="submit" class="btn btn-success my-3">Submit</button>
+                    <button type="submit" class="btn btn-secondary my-3">Submit</button>
                 </form>
             </div>
             {% endif %}
