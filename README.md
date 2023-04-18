@@ -1,108 +1,232 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Love Barista
 
-Welcome HannaBerggren,
+* Love Barista is a blog post for everyone who likes or love coffee. This app is a blog designed so that visitors and staff easily can manage the posts by them self. Both parties can post, view, change and delete their blogposts as per their own liking. 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![Image](readme.images/responsive.png)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## Planning
 
-## Gitpod Reminders
+* This project was developed through the Kanban board, you can find this via the github projects. Here the developer creates cards to help them during the development, this is mainly to make it easier to keep track of the different user stories and make sure everything is completed.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+![Image](readme.images/kanbanboard.png)
 
-`python3 -m http.server`
+## User experience
 
-A blue button should appear to click: _Make Public_,
+### Site goals
 
-Another blue button should appear to click: _Open Browser_.
+* This site is created with the intention to help the coffee lovers around the world to share their passion for coffee. They should be able to view and change if they think it should be neccessary.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+* It should also be capable to provide the visitors with the same type of functions, the only exception should be that they only can manage their own bookings. The site will provide a simple way of making a blogpost.
 
-A blue button should appear to click: _Make Public_,
+### First time user goals
+* As a first time user I want the navigation to be simple
+* As a first time user I want the registration to be simple
+* As a first time user I want the login to be simple
+* As a first time user I want the logout to be simple
+* As a first time user I want to easily understand how to change/delete my blogpost
 
-Another blue button should appear to click: _Open Browser_.
+## Site structure
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### Navigation
 
-To log into the Heroku toolbelt CLI:
+* The navigation bar provides the different links for the different pages, such as Home, Menu, Create Booking/Manage Booking, register, login and logout. It is accesable on all pages and offers the user an easy experience.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+![Image](readme.images/navigation.png)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+### Home page
 
-------
+* The Home page introduce the user to the blog by showing different blogposts. It's easy to click on every blogpost to read more about a place the viewer finds interesting.
 
-## Release History
+![Image](readme.images/homeimage.png)
+![Image](readme.images/maintext.png)
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+### Register
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+* Makes it available for a new user to create an account, you have to have an account to be able to make a blogpost.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+![Image](readme.images/register2.png)
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+### Create/manage blogpost
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+* After you have register, after that when you click on your name in the navbar, you
+can choose between the create blogpost page or the manage blogpost page.
+* Create a blogpost offers the user to easily pick when they want to make their post.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+![Image](readme.images/sorry.png)
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+### Login
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+* This page is where the user can log in and then redirect themselves to the create booking page if they want. 
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+![Image](readme.images/signin.png)
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+### Logout
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+* This page is where the user can log out if they want.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+![Image](readme.images/signout.png)
 
-------
+### Footer
 
-## FAQ about the uptime script
+* Is at the bottom of the page, showing author and socailmedia accounts.
 
-**Why have you added this script?**
+![Image](readme.images/footer.png)
+ 
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+![design image](readme.images/thefork.png)
 
-**How will this affect me?**
+### Features left to implement
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+* I would like to add a map function to point out where the location is
+* I would like to spend smore time on the styling and make sure it looks even better.
+* I would like to add a favicon for a better layout.
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+## Design
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+### Wireframes 
 
-**So….?**
+* I created different Wireframes via the Balsamiq website, I used this because I wanted to structure everything up for myself to make it easier for me to create.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+* This is the design for the home page:
 
-**Can I opt out?**
+![design image](readme.images/Homepage.png)
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+* This is the design for the blog page:
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+![design image](readme.images/Menupage.png)
 
-**Anything more?**
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+* This is the design for the register page:
 
----
+![design image](readme.images/register.png)
 
-Happy coding!
+* This is the design for the login page:
+
+![design image](readme.images/login.png)
+
+* This is the design for the logout page:
+
+![design image](readme.images/logout.png)
+
+### Images
+
+* images used n the project were all found on google
+
+### Color-scheme
+
+* I decided to keep it clean and minimalistic to get a warm and calm feeling.
+
+## Admin Page
+* Admin has access via the default Django Admin page. The Admin login can be accessed from the navigation menus once a superuser has logged into The Fork. Once logged in, Admin users have all the access to create, edit and delete all bookings. All the requests can be viewed from the admin page.
+
+## Technologies 
+
+* [GitHub](https://github.com/) - to host the repositories.
+* [Gitpod](https://www.gitpod.io/) - as the IDE for the application.
+* [Elephantsql](https://www.elephantsql.com/) - for the postgresql
+* [Python](https://docs.python.org/3/contents.html) - primary language of the application.
+* [HTML](https://www.w3schools.com/html/) - Structure/skeleton of the page
+* [CSS](https://www.w3schools.com/css/) - extra styling of the webpage
+* [Javascript](https://www.w3schools.com/js/) - the apply some extra button functions that I wanted
+* [Stack overflow](https://stackoverflow.com/) - basic explaining 
+* [Bootstrap 5](https://www.w3schools.com/bootstrap5/bootstrap_get_started.php) - for design and placement
+* [PEP8](http://pep8online.com/) - for testing and validating the code.
+* [Google Fonts](https://fonts.google.com/about) - for the font of the text
+
+
+## Testing
+
+### Lighthouse
+
+* This is the read from lighthouse:
+
+![image](readme.images/lighthouse.png)
+
+
+### Validator testing
+
+* I tested it through the python validator and no errors or warnings were shown. Everything works perfectly, no errors were returned.
+* The problems shown in the workspace were fixed as well. 
+*  All the code has been run through the W3C html validator, the W3C CSS validator and the JavaScript JSHint validator. The code passed the W3C Validator barring all the django template tags. Outside of those, no errors were found.
+
+* All code passed through the pep8-validator came out clean, looking like this:
+
+![image](readme.images/pep8.png)
+
+### Manual testing
+
+* Only the admin can make a post puplished.
+* If the user try to create a account, a text is shown if they havn't filled in the form correct.
+* It is not possible to add a post unless the user has an account.
+* The user can like all blogpost if they have an account and are logged in.
+* The user can only delete/edit their own blogpost
+* The admin/staff can delete/edit all posts
+
+### Bugs
+
+* No bugs were detected
+
+## Deployment
+
+### [Elephantsql](https://www.elephantsql.com/) 
+
+* Heroku needs sql's to work
+* ElephantSQL will manage administrative tasks of PostgreSQL, such as installation, upgrades to latest stable version and backup handling.
+* It automates every part of setup and running of PostgreSQL clusters.
+
+1. Log into Heroku 
+The first step to creating a free PostgreSQL database is to log in to Heroku. To create a new database on Heroku, an app must first be created within the personal dashboard. 
+
+2. Create a new Heroku app 
+Once logged in to Heroku, navigate to the personal app dashboard to create a new Heroku app. Simply click the Create new app button, which should be located on the top-right corner of the dashboard. 
+
+3. Add a PostgreSQL database 
+After creating the new app, it's time to attach a PostgreSQL database to it. Simply navigate to the Resources tab located in the header of the app's dashboard. Add the ElephantSql and a free PostgreSQL database has now been successfully created. 
+
+### [Github](https://github.com/) 
+
+* When logging into github, navigate to the settings tab
+* Here you can find pages down on the left side
+* A new page will load which will present the branch to master or main, and then the save option
+* Once the save button has been clicked and the page is reloaded there will be a link to the deployed site.
+
+### [Heroku](https://www.heroku.com/) Deployment:
+
+* Ensure your requirements.txt file has the required dependencies. To do this you can use the following
+code in your IDE: pip3 freeze > requirements.txt
+* Create or login to you Heroku account
+* Navigate to Dashboard
+* Click and select "Create app" in the middle of the page
+* Enter a unique name for you app
+* Select region and the "create app"
+
+### App deployment
+* Navgiate to the deploy section
+* Scroll down to the "deployment method" and select "Github"
+* Authorise the connection
+* Also important to make sure you have the right config variables applied, these change the way the app behaves. 
+* Go to the settings tab and then click reveal config vars
+* Add the following config vars:
+* * SECRET_KEY: (Your secret key)
+* * DATABASE_URL: (This should already exist with add on of postgres)
+* * EMAIL_HOST_USER: (email address)
+* * EMAIL_HOST_PASS: (email app password)
+* * CLOUNDINARY_URL: (cloudinary api url)
+* Search for the repository name you've chosen
+* Make sure you have selected the correct branch (master/main), and select the method you desire.
+
+## Credits 
+
+### Content
+
+* I used Code Institute's I Think Therefore I Blog (walkthrough project) for guidance with code structure and deployment steps. It was really helpful and helped me alot along the way.
+
+### Acknowledgements
+* This Love Barista Blog was created as Portfolio Project 4 for the the Full Stack Software Developer diploma by the [Code Institute](https://codeinstitute.net/).
+* I would like to thank my the tutors at code institute for being extremely helpful considering my many questions and to my partner who helped me with mental support. And once again, thanks to my cousine for helping me with so many things!
+
+
+Hanna Berggren, 2023
