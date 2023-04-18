@@ -2,21 +2,19 @@
 
 * Love Barista is a blog post for everyone who likes or love coffee. This app is a blog designed so that visitors and staff easily can manage the posts by them self. Both parties can post, view, change and delete their blogposts as per their own liking. 
 
-![Image](readme.images/responsive.png)
+![Image](/static/css/images/responsive.png)
 
 ## Planning
 
 * This project was developed through the Kanban board, you can find this via the github projects. Here the developer creates cards to help them during the development, this is mainly to make it easier to keep track of the different user stories and make sure everything is completed.
 
-![Image](readme.images/kanbanboard.png)
+![Image](/static/css/images/kanbanboard.png)
 
 ## User experience
 
 ### Site goals
 
-* This site is created with the intention to help the coffee lovers around the world to share their passion for coffee. They should be able to view and change if they think it should be neccessary.
-
-* It should also be capable to provide the visitors with the same type of functions, the only exception should be that they only can manage their own bookings. The site will provide a simple way of making a blogpost.
+* This site is created with the intention to help the coffee lovers around the world to share their passion for coffee. They should be able to view and change the blogpost if they think it should be neccessary.
 
 ### First time user goals
 * As a first time user I want the navigation to be simple
@@ -29,22 +27,21 @@
 
 ### Navigation
 
-* The navigation bar provides the different links for the different pages, such as Home, Menu, Create Booking/Manage Booking, register, login and logout. It is accesable on all pages and offers the user an easy experience.
+* The navigation bar provides the different links for the different pages, such as Home, Register and Login. It is accesable on all pages and offers the user an easy experience.
 
-![Image](readme.images/navigation.png)
+![Image](/static/css/images/navbar.png)
 
 ### Home page
 
 * The Home page introduce the user to the blog by showing different blogposts. It's easy to click on every blogpost to read more about a place the viewer finds interesting.
 
-![Image](readme.images/homeimage.png)
-![Image](readme.images/maintext.png)
+![Image](/static/css/images/homepage.png)
 
 ### Register
 
 * Makes it available for a new user to create an account, you have to have an account to be able to make a blogpost.
 
-![Image](readme.images/register2.png)
+![Image](/static/css/images/register.png)
 
 
 ### Create/manage blogpost
@@ -53,30 +50,31 @@
 can choose between the create blogpost page or the manage blogpost page.
 * Create a blogpost offers the user to easily pick when they want to make their post.
 
-![Image](readme.images/sorry.png)
+![Image](/static/css/images/newpost-oldpost.png)
 
 
 
 ### Login
 
-* This page is where the user can log in and then redirect themselves to the create booking page if they want. 
+* This page is where the user can log in. 
 
-![Image](readme.images/signin.png)
+![Image](/static/css/images/signin.png)
 
 ### Logout
 
 * This page is where the user can log out if they want.
 
-![Image](readme.images/signout.png)
+![Image](/static/css/images/signout.png)
 
 ### Footer
 
 * Is at the bottom of the page, showing author and socailmedia accounts.
 
-![Image](readme.images/footer.png)
+![Image](/static/css/images/footer.png)
  
+### Design Image
 
-![design image](readme.images/thefork.png)
+![design image](/static/css/images/lovebarista.jpg)
 
 ### Features left to implement
 
@@ -88,39 +86,24 @@ can choose between the create blogpost page or the manage blogpost page.
 
 ### Wireframes 
 
-* I created different Wireframes via the Balsamiq website, I used this because I wanted to structure everything up for myself to make it easier for me to create.
-
-* This is the design for the home page:
-
-![design image](readme.images/Homepage.png)
+* I created a Wireframe via the Balsamiq website, I used this because I wanted to structure everything up for myself to make it easier for me to create.
 
 * This is the design for the blog page:
 
-![design image](readme.images/Menupage.png)
-
-
-* This is the design for the register page:
-
-![design image](readme.images/register.png)
-
-* This is the design for the login page:
-
-![design image](readme.images/login.png)
-
-* This is the design for the logout page:
-
-![design image](readme.images/logout.png)
+![design image](/static/css/images/wireframe.png)
 
 ### Images
 
-* images used n the project were all found on google
+* images used n the project were all found on google.
 
 ### Color-scheme
 
-* I decided to keep it clean and minimalistic to get a warm and calm feeling.
+* I decided to choose colors to get a warm and calm feeling.
+
+![design image](/static/css/images/colors.png)
 
 ## Admin Page
-* Admin has access via the default Django Admin page. The Admin login can be accessed from the navigation menus once a superuser has logged into The Fork. Once logged in, Admin users have all the access to create, edit and delete all bookings. All the requests can be viewed from the admin page.
+* Admin has access via the default Django Admin page. The Admin login can be accessed from the navigation menus once a superuser has logged in. Once logged in, Admin users have all the access to create, edit and delete all bookings. All the requests can be viewed from the admin page.
 
 ## Technologies 
 
@@ -143,18 +126,9 @@ can choose between the create blogpost page or the manage blogpost page.
 
 * This is the read from lighthouse:
 
-![image](readme.images/lighthouse.png)
-
-
-### Validator testing
-
-* I tested it through the python validator and no errors or warnings were shown. Everything works perfectly, no errors were returned.
-* The problems shown in the workspace were fixed as well. 
-*  All the code has been run through the W3C html validator, the W3C CSS validator and the JavaScript JSHint validator. The code passed the W3C Validator barring all the django template tags. Outside of those, no errors were found.
-
-* All code passed through the pep8-validator came out clean, looking like this:
-
-![image](readme.images/pep8.png)
+![image](/static/css/images/lighthouse1.png)
+![image](/static/css/images/lighthouse2.png)
+![image](/static/css/images/lighthouse4.png)
 
 ### Manual testing
 
@@ -162,12 +136,12 @@ can choose between the create blogpost page or the manage blogpost page.
 * If the user try to create a account, a text is shown if they havn't filled in the form correct.
 * It is not possible to add a post unless the user has an account.
 * The user can like all blogpost if they have an account and are logged in.
-* The user can only delete/edit their own blogpost
-* The admin/staff can delete/edit all posts
+* The user can only delete/edit their own blogpost.
+* The admin/staff can delete/edit all posts.
 
 ### Bugs
 
-* No bugs were detected
+* To late a realized that a user couldn't delete/update their blogpost. So unfortunately that doesn't work.
 
 ## Deployment
 
@@ -226,7 +200,7 @@ code in your IDE: pip3 freeze > requirements.txt
 
 ### Acknowledgements
 * This Love Barista Blog was created as Portfolio Project 4 for the the Full Stack Software Developer diploma by the [Code Institute](https://codeinstitute.net/).
-* I would like to thank my the tutors at code institute for being extremely helpful considering my many questions and to my partner who helped me with mental support. And once again, thanks to my cousine for helping me with so many things!
+* I would like to thank the tutors at code institute for being extremely helpful considering my many questions and to my partner who helped me with mental support. And once again, thanks to my cousine for helping me with so many things!
 
 
 Hanna Berggren, 2023

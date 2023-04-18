@@ -3,7 +3,6 @@ from django.urls import path
 
 urlpatterns = [
     path('', views.PostList.as_view(), name="home"),
-    path('<slug:slug>/', views.PostDetail.as_view(), name='post_detail'),
     path('like/<slug:slug>', views.PostLike.as_view(), name='post_like'),
     path("user_page", views.User.as_view(), name="user-page"),
     path("add_post", views.AddPost.as_view(), name="add-post"),
@@ -16,4 +15,5 @@ urlpatterns = [
     path(
         "user_post_list/", views.UserPostList.as_view(), name="user-post-list"
     ),
+    path('<slug:slug>/', views.PostDetail.as_view(), name='post_detail'),
 ]
