@@ -12,7 +12,7 @@
                     {{ form | crispy }}
                     <h3 class="mt-5"> Hey {{ user }}, <br>Are you sure you want to delete your post named: "{{ post.title }}"?</h3>
                     <a href="{% url 'delete-post' post.slug %}">
-                        <button class="btn btn-lg btn-danger delete-btn my-3">Delete</button>
+                        <button class="btn btn-light m-x text-dark"><strong>Delete</strong></button>
                 </form>
             </div>
         </div>

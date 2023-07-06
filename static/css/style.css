@@ -1,5 +1,6 @@
 body {
     background-color: #D8CFCF;
+    font-family: el-messiri;
 }
 
 .brand {
@@ -22,7 +23,11 @@ body {
 }
 
 .main-bg {
-    background-color: #ead7b4;
+    background-color: #e8cfa0;
+}
+
+#update-post {
+    background-color: #e8cfa0;
 }
 
 .card {
@@ -88,6 +93,10 @@ body {
     color: #101512;
 }
 
+.page-link:hover {
+    color: #445261;
+}
+
 .post-link:hover,
 .page-link {
     color: #de814c;
@@ -144,5 +153,9 @@ body {
 }
 
 .form-group {
-    background-color: #c66c38;
+    background-color: #6a829c;
+}
+
+.nav-item {
+    font-size: 25px;
 }
