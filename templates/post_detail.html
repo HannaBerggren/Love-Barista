@@ -116,6 +116,16 @@
                 {% endif %}
                 {% endif %}
             </div>
+            <!-- Only visible to the author of the post-->
+            {% if user.id == post.author.id  %}
+            <div class="row">
+                <div class="d-flex justify-content-center">
+                    <a href="{% url 'update-post' post.slug  %}" role="button" class="btn btn-light mx-2 text-dark"><strong>Edit Post</strong> </a>
+                    <a href="{% url 'delete-post' post.slug  %}" role="button" class="btn btn-danger mx-2 text-light"><strong>Delete Post</strong></a>
+                </div>
+            </div>
+            {% endif %}
+            <hr>
         </div>
     </div>
 </div>
