@@ -7,7 +7,7 @@
     <div class="container-fluid p-2 bg-#df8754 text-dark bg-opacity-10">
         <div class="row justify-content-center">
             <div class="col-sm-10 mt-1">
-                <h2 class="mt-3 text-center">Hi <span>{{ user }}</span></h2>
+                <h2 class="mt-3 text-center">Hey <span>{{ user }}</span></h2>
                 <h3 class="mt-2 text-center">Update your post: </h3>
                 <form method="POST" enctype="multipart/form-data" class="input-fields">
                     {% csrf_token %}
@@ -18,7 +18,7 @@
         </div>
     </div>
     {% else %}
-    <h2>This is not your post. You can only update the post which you have posted.</h2>
+    <h2>This is not your post, you can only update your own post...</h2>
     {% endif %}
 </section>
 {% endblock %}

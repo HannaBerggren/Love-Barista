@@ -120,7 +120,7 @@
             {% if user.id == post.author.id  %}
             <div class="row">
                 <div class="d-flex justify-content-center">
-                    <a href="{% url 'update-post' post.slug  %}" role="button" class="btn btn-light mx-2 text-dark"><strong>Edit Post</strong> </a>
+                    <a href="{% url 'update-post' post.slug  %}" role="button" class="btn btn-light mx-2 text-dark"><strong>Edit Post</strong></a>
                     <a href="{% url 'delete-post' post.slug  %}" role="button" class="btn btn-light mx-2 text-dark"><strong>Delete Post</strong></a>
                 </div>
             </div>
