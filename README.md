@@ -1,18 +1,38 @@
 # Love Barista
 
-* Love Barista is a blog post for everyone who likes or love coffee. This app is a blog designed so that visitors and staff easily can manage the posts by them self. Both parties can post, view, change and delete their blogposts as per their own liking. 
-
 ![Image](/static/css/images/responsive.png)
 
-## Planning
+[Live Site](https://8000-hannaberggr-lovebarista-4l76yoe8zfr.ws-eu101.gitpod.io/)
 
-* This project was developed through the Kanban board, you can find this via the github projects. Here the developer creates cards to help them during the development, this is mainly to make it easier to keep track of the different user stories and make sure everything is completed.
+## Table Of Contents:
+1. [Project Goals](#project-goals)
+    * [CRUD functionality](#crud-functionality)
+2. [UX Design](#ux-design)
+    * [User Stories](#user-stories)
+    * [Wireframes](#wireframes)
+    * [Agile Methodology](#agile-methodology)
+    * [Typography](#typography)
+    * [Colour Scheme](#colour-scheme)
+    * [Database Diagram](#database-diagram)    
+3. [Features](#features)
+    * [Navigation Bar](#navigation-bar)  
+    * [Home Page](#home-page)
+    * [Register Page](#register-page)
+    * [Create Blogpost](#create-blogpost)
+    * [Login Page](#login-page)
+    * [Logout Page](#logout-page)
+    * [Edit Page](#edit-page)
+    * [Delete Page](#delete-page)
+    * [footer](#footer)
 
-![Image](/static/css/images/kanbanboard.png)
+4. [Future Features](#future-features)
+5. [Technologies Used](#technologies-used)
+6. [Testing](#testing)
+7. [Deployment](#deployment)
+8. [Credits](#credits)
+9. [Acknowledgements](#acknowledgements)
 
-## User experience
-
-### Site goals
+### Project goals
 
 * This site is created with the intention to help the coffee lovers around the world to share their passion for coffee. They should be able to view and change the blogpost if they think it should be neccessary.
 
@@ -23,15 +43,79 @@
 * As a first time user I want the logout to be simple
 * As a first time user I want to easily understand how to change/delete my blogpost
 
-## Site structure
+### CRUD functionality
 
-### Navigation
+Love Barista features a data store with full Create, Read, Update and Delete functionality.
 
-* The navigation bar provides the different links for the different pages, such as Home, Register and Login. It is accesable on all pages and offers the user an easy experience.
+- Create - users can create a user account, and authenticated users can create a profile, collaboration requests and messages to their approved collaborators.
+- Read - users can view the profiles and posts of other users. Authenticated users can read messages sent to them.
+- Update - authenticated users can update their profiles and save the changes. They can approve collaboration requests sent to them wich results in a new many-to-many relationship in the database.
+- Delete - authenticated users can delete their profile and pending collaboration requests, chosing to cancelling, rejecting or approving them. Authenticated users can also delete messages sent by or to them, the message is not deleted from the database until both the sending and receiving users have marked them as deleted.
 
-![Image](/static/css/images/navbar.png)
+## UX Design:
 
-### Home page
+### Wireframes
+Wireframes that where created in [Balsamiq](https://balsamiq.com/) for this project are displayed below. The wireframes were  created in the planning phase of the project. Please note that the wireframes might not be exactly a copy of the project due to the fact that the site has changed during development.
+
+![design image](/static/css/images/wireframe.png)
+
+### User Stories
+After the first planning phase user stories were implemented one by one. The wireframes created became the base for the User stories. 
+
+Individual user stories were categorised according to whether they had to be implemented to produce a Minimum Viable Product (MVP), with priority for development to be given to those that were part of the MVP specification. 
+
+The user stories that where created can be found [here](https://github.com/users/malinpalo/projects/9) and are added below.
+
+### Agile Methodology
+GitHub issues, milestones and projects were used to document and track an agile development approach.
+An issue was created for each user story. These were labelled as 'MVP' if they were part of the MVP spec. All user stories were then added to a 'Product Backlog' milestone  [Link to product backlog]().
+
+I set up a plan for development this plan was just to show how it could work in real life. Development was divided into iterations with a timebox of four working days, each with a total value of 16 story points. The duration in calendar days was variable during development, due to fitting the four working days around work and other commitments. A milestone and a GitHub project board (a Kanban board) were created for each iteration, and user stories moved from the Product Backlog and into iterations as each cycle of work began. They were labelled as 'must have', 'could have' or 'should have' goals for the iteration, and assigned story point values. Story points for 'must have' user stories never exceeded 9 (60%).
+
+A project Kanban board was used to track progress, with user stories moved between 'Todo', 'In Progress' and 'Done' columns as appropriate. 
+![Image](/static/css/images/kanbanboard.png)
+
+There was consideable uncertainty as to how many story point to allocate to each task. Therefor the first iteration had tasks exceeding 16 storie points in total. Tasks that didn't finish in time where to be moved in to the next iteration.
+
+### Typography
+
+### Color Scheme
+
+* I decided to choose colors to get a warm and calm feeling. 
+![design image](/static/css/images/colors.png)
+
+I used [Coolors](https://coolors.co/) to generate a color scheme from the default post image. I chose a natural background color with complimentary colors in green, blue and orange for text, buttons and icons to make the sites content stand out to be clear to the user.
+
+### Database Diagram
+
+I created an entity relationship diagram using LucidCharts.
+
+![ERD](/static/css/images/erd.png)
+
+### Design Image
+
+![design image](/static/css/images/lovebarista.jpg)
+
+## Features:
+
+### Navigation Bar
+
+- The Navigation bar sits at the very top of each page, The logo is at the right hand side and the navigation links are on the left.
+- When logged in the **Login** becomes **Logout** and the **Registeration** link is removed.
+- The Navbar background is white with the Navigation links and logo in black and darkgreen colored text.
+- When the logo is clicked it redirects the user to the home page.
+- On large to xx-large screens the navigation bar is in the center of the page.
+- When on medium to small screens the navigation menu changes to burger menu which shows all the nav links when clicked on (second two screenshot below).
+
+![NavBar]()
+
+Navigation bar on mobile and tablets
+![NavBar Burger]()
+![NavBar Burger Menu dropdown]()
+
+
+
+### Home Page
 
 * The Home page introduce the user to the blog by showing different blogposts. It's easy to click on every blogpost to read more about a place the viewer finds interesting.
 
@@ -68,13 +152,53 @@ can choose between the create blogpost page or the manage blogpost page.
 
 ### Footer
 
-* Is at the bottom of the page, showing author and socailmedia accounts.
+- The footer is found at the bottom of every page and is responsive for small and large screens.
+- The footer displays author and icons for Facebook, Twitter, Instagram and Google. These are all in different colours to pop out to get the viewers interest.
+- When any of the icons are clicked the social media site opens on a seperate tab, this way the user still has the Love Barista website open so they can easily navigate back to it.
+
 
 ![Image](/static/css/images/footer.png)
- 
-### Design Image
 
-![design image](/static/css/images/lovebarista.jpg)
+
+
+### Edit Page
+
+![Edit page]()
+![Edit page]()
+![Edit page]()
+
+### Delete Page
+
+![Delete page]()
+
+
+
+## Future Features
+
+## Testing
+
+Please click [**_here_**](TESTING.md) to read more information about testing Love Barista.
+
+## Technologies 
+
+* [GitHub](https://github.com/) - to host the repositories.
+* [Gitpod](https://www.gitpod.io/) - as the IDE for the application.
+* [Elephantsql](https://www.elephantsql.com/) - for the postgresql
+* [Python](https://docs.python.org/3/contents.html) - primary language of the application.
+* [HTML](https://www.w3schools.com/html/) - Structure/skeleton of the page
+* [CSS](https://www.w3schools.com/css/) - extra styling of the webpage
+* [Javascript](https://www.w3schools.com/js/) - the apply some extra button functions that I wanted
+* [Stack overflow](https://stackoverflow.com/) - basic explaining 
+* [Bootstrap 5](https://www.w3schools.com/bootstrap5/bootstrap_get_started.php) - for design and placement
+* [PEP8](http://pep8online.com/) - for testing and validating the code.
+* [Google Fonts](https://fonts.google.com/about) - for the font of the text
+* Love Barista is a blog post for everyone who likes or love coffee. This app is a blog designed so that visitors and staff easily can manage the posts by them self. Both parties can post, view, change and delete their blogposts as per their own liking. 
+
+
+
+## Planning
+
+* This project was developed through the Kanban board, you can find this via the github projects. Here the developer creates cards to help them during the development, this is mainly to make it easier to keep track of the different user stories and make sure everything is completed.
 
 ### Features left to implement
 
@@ -82,25 +206,10 @@ can choose between the create blogpost page or the manage blogpost page.
 * I would like to spend smore time on the styling and make sure it looks even better.
 * I would like to add a favicon for a better layout.
 
-## Design
-
-### Wireframes 
-
-* I created a Wireframe via the Balsamiq website, I used this because I wanted to structure everything up for myself to make it easier for me to create.
-
-* This is the design for the blog page:
-
-![design image](/static/css/images/wireframe.png)
-
 ### Images
 
 * images used n the project were all found on google.
 
-### Color-scheme
-
-* I decided to choose colors to get a warm and calm feeling.
-
-![design image](/static/css/images/colors.png)
 
 ## Admin Page
 * Admin has access via the default Django Admin page. The Admin login can be accessed from the navigation menus once a superuser has logged in. Once logged in, Admin users have all the access to create, edit and delete all bookings. All the requests can be viewed from the admin page.
@@ -141,7 +250,7 @@ can choose between the create blogpost page or the manage blogpost page.
 
 ### Bugs
 
-* To late a realized that a user couldn't delete/update their blogpost. So unfortunately that doesn't work.
+* 
 
 ## Deployment
 
