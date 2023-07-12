@@ -200,7 +200,7 @@ code in your IDE: pip3 freeze > requirements.txt
 
 ### Acknowledgements
 * This Love Barista Blog was created as Portfolio Project 4 for the the Full Stack Software Developer diploma by the [Code Institute](https://codeinstitute.net/).
-* I would like to thank the tutors at code institute for being extremely helpful considering my many questions and to my partner who helped me with mental support. And once again, thanks to my cousine for helping me with so many things!
+* I would like to thank the tutors at code institute for being extremely helpful considering my many questions and to my partner who helped me with mental support. And once again, thanks to my cousin for helping me with so many things!
 
 
 Hanna Berggren, 2023
