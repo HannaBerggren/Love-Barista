@@ -23,11 +23,11 @@ body {
 }
 
 .main-bg {
-    background-color: #e8cfa0;
+    background-color: #d8d8e0;
 }
 
 #update-post {
-    background-color: #e8cfa0;
+    background-color: #d8d8e0;
 }
 
 .card {
@@ -109,7 +109,7 @@ body {
 
 .post-subtitle {
     margin-left: 5%;
-    color: lightgray;
+    color: lightgrey;
 }
 
 .btn-signup {
