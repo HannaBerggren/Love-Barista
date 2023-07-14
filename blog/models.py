@@ -8,6 +8,7 @@ from django.utils.text import slugify
 
 STATUS = ((0, "Draft"), (1, "Published"))
 
+
 class Destination(models.Model):
     """
     Model for destination place
@@ -23,6 +24,7 @@ class Destination(models.Model):
 
     def __str__(self):
         return self.title
+
 
 class Post(models.Model):
     title = models.CharField(max_length=200, unique=True)
@@ -63,3 +65,4 @@ class Comment(models.Model):
 
     def __str__(self):
         return f"Comment {self.body} by {self.name}"
+

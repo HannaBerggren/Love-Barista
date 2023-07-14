@@ -18,56 +18,56 @@
 ## Validator Testing
 
 ### W3C HTML validator
-The site pages were run through the [W3C validator](https://validator.w3.org/) to check for any issues and HTML syntax errors. 
+The site pages were run through the [W3C validator]([https://validator.w3.org/](https://validator.w3.org/nu/?showsource=yes&doc=https://8000-hannaberggr-lovebarista-4l76yoe8zfr.ws-eu101.gitpod.io/)) to check for any issues and HTML syntax errors. 
 Given the presence of Django template code in the HTML templates, the rendered HTML was copied from the Chrome browser by right clicking, selecting 'view page source' for each page of the site and then pasting directly into the HTML validator.
-No errors or warnings were to be found.
+No errors, but one warnings were to be found.
 
-![W3C HTML](readme-docs/images/w3c-html.png)
+![W3C HTML](static/css/images/htmlchecker.png)
 
 ### CSS
 - The CSS stylesheet was put through the [W3C validator](https://jigsaw.w3.org/css-validator/)  to check for errors.
-- No errors were to be found.
+- No errors were found.
 
-![W3C CSS](readme-docs/images/w3c-css.png)  
+![W3C CSS](static/css/images/w3c.png)  
 
 ### JavaScript
 - The Javascript file was put through the [Jshint](https://jshint.com/) to check for errors. 
-- No errors were to be found.
+- No errors, but five warnings was found.
 
-![JS Validator screenshot](readme-docs/images/jshint.png)
+![JS Validator screenshot](static/css/images/jshint.png)
 
 ### Python
-- Issues with the custom python code were fixed on an ongoing basis during development using the pycodestyle tool, which was installed to the IDE, GitPod.  
+- Issues with the custom python code were fixed on an ongoing basis during development using the pycodestyle tool, which was installed to the IDE, GitPod.
 - The code was also tested to check for errors using **Code Institutes pep8 online** website, [PEP8](https://pep8ci.herokuapp.com/). No errors returned as you can see from the screenshots below.
 
 <details>
     <summary>admin.py</summary>  
     
-![Admin PEP8 validator](readme-docs/images/admin-pep8.png)  
+![Admin PEP8 validator](static/css/images/pep8admin.png)  
 </details>
   
 <details>
     <summary>forms.py</summary>  
     
-![Forms PEP8 validator](readme-docs/images/forms-pep8.png)  
+![Forms PEP8 validator](static/css/images/pep8forms.png)  
 </details>  
 
 <details>
     <summary>models.py</summary>  
     
-![Models PEP8 validator](readme-docs/images/models-pep8.png)
+![Models PEP8 validator](static/css/images/pep8models.png)
 </details>  
   
 <details>
     <summary>urls.py</summary>  
     
-![Urls PEP8 validator](readme-docs/images/urls-pep8.png)
+![Urls PEP8 validator](static/css/images/pep8urls.png)
 </details>  
 
 <details>
     <summary>views.py</summary>  
     
-![Views PEP8 validator](readme-docs/images/views-pep8.png)
+![Views PEP8 validator](static/css/images/pep8views.png)
 </details>  
 
 [Back to the top](#table-of-contents)
@@ -105,7 +105,7 @@ No errors or warnings were to be found.
 *As a User I can Edit/Delete my post so that I can update my blogpost after posting them to the website*
 - When viewing a post that the User has uploaded in the top right corner they have a choice to either delete or edit the post. A user can only edit or delete a post they are the owner for.
 
-#### Like | Unlike recipes
+#### Like | Unlike posts
 *As a User I can like/unlike posts so that I can give other users feedback without writing a comment.*
 - On the post details there is a like button below the image, it is a Love heart that is empty outline when not liked and then is filled when liked, beside it displays the number of people that like the post. A User must be logged in to access this functionality.
 

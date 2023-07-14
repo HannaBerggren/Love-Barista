@@ -41,6 +41,7 @@ class AddPostForm(forms.ModelForm):
         ),
     }
 
+
 class UpdatePostForm(forms.ModelForm):
     """
     Form to edit a blog post
@@ -54,7 +55,7 @@ class UpdatePostForm(forms.ModelForm):
             "content",
             "featured_image",
         )
-    
+
     widgets = {
         "title": forms.TextInput(attrs={"class": "form-control"}),
         "excerpts": forms.Select(attrs={"class": "form-control"}),

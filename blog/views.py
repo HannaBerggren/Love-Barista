@@ -76,7 +76,7 @@ class PostDetail(View):
 
 
 class PostLike(View):
-    
+
     def post(self, request, slug, *args, **kwargs):
         post = get_object_or_404(Post, slug=slug)
         if post.likes.filter(id=request.user.id).exists():
@@ -105,6 +105,7 @@ class DeletePost(generic.DeleteView):
         of the post to the database
         """
         return reverse("user-post-list")
+
 
 @login_required()
 def update_post(request, slug):
