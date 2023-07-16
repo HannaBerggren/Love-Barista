@@ -75,9 +75,16 @@ I set up a plan for development this plan was just to show how it could work in 
 A project Kanban board was used to track progress, with user stories moved between 'Todo', 'In Progress' and 'Done' columns as appropriate. 
 ![Image](/static/css/images/kanbanboard.png)
 
-There was consideable uncertainty as to how many story point to allocate to each task. Therefor the first iteration had tasks exceeding 16 storie points in total. Tasks that didn't finish in time where to be moved in to the next iteration.
+There was consideable uncertainty as to how many story point to allocate to each task. Therefore the first iteration had tasks exceeding 16 storie points in total. Tasks that didn't finish in time where to be moved in to the next iteration.
 
 ### Typography
+
+[Google Fonts](https://fonts.google.com/) was used to import the fonts featured in the site, my logo is in dancing script and the rest of the text is in el-messiri.
+
+### Icons and Images
+
+* All icons used throughout the site were provided by [FontAwesome](https://fontawesome.com/)
+* I sourced an icon from [Flaticon](https://www.flaticon.com). I then used [Favicon](https://favicon.io/) to convert this png to an icon file and imported that to my site. I installed a Favicon to help users distinguish this tab from others in their browser, a simple coffee-related design and with hearts because it felt like fun.
 
 ### Color Scheme
 
@@ -107,11 +114,11 @@ I created an entity relationship diagram using LucidCharts.
 - On large to xx-large screens the navigation bar is in the center of the page.
 - When on medium to small screens the navigation menu changes to burger menu which shows all the nav links when clicked on (second two screenshot below).
 
-![NavBar]()
+![NavBar](static/css/images/navbar.png)
 
 Navigation bar on mobile and tablets
-![NavBar Burger]()
-![NavBar Burger Menu dropdown]()
+![NavBar Burger](static/css/images/navbarburger.png)
+![NavBar Burger Menu dropdown](static/css/images/navbarburgerdropdown.png)
 
 
 
@@ -125,7 +132,13 @@ Navigation bar on mobile and tablets
 
 * Makes it available for a new user to create an account, you have to have an account to be able to make a blogpost.
 
-![Image](/static/css/images/register.png)
+![Image](/static/css/images/signup.png)
+
+### Login
+
+* This page is where the user can log in. 
+
+![Image](/static/css/images/sign-in.png)
 
 
 ### Create/manage blogpost
@@ -134,21 +147,15 @@ Navigation bar on mobile and tablets
 can choose between the create blogpost page or the manage blogpost page.
 * Create a blogpost offers the user to easily pick when they want to make their post.
 
-![Image](/static/css/images/newpost-oldpost.png)
+![Image](/static/css/images/create-manage.png)
 
 
-
-### Login
-
-* This page is where the user can log in. 
-
-![Image](/static/css/images/signin.png)
 
 ### Logout
 
 * This page is where the user can log out if they want.
 
-![Image](/static/css/images/signout.png)
+![Image](/static/css/images/sign-out.png)
 
 ### Footer
 
@@ -157,19 +164,18 @@ can choose between the create blogpost page or the manage blogpost page.
 - When any of the icons are clicked the social media site opens on a seperate tab, this way the user still has the Love Barista website open so they can easily navigate back to it.
 
 
-![Image](/static/css/images/footer.png)
+![Image](/static/css/images/footer-.png)
 
 
 
 ### Edit Page
 
-![Edit page]()
-![Edit page]()
-![Edit page]()
+![Edit page](/static/css/images/editpost.png)
+![Edit page](/static/css/images/update.png)
 
 ### Delete Page
 
-![Delete page]()
+![Delete page](/static/css/images/delete.png)
 
 
 
@@ -208,7 +214,7 @@ Please click [**_here_**](TESTING.md) to read more information about testing Lov
 
 ### Images
 
-* images used n the project were all found on google.
+* images used in the project were all found on google.
 
 
 ## Admin Page
