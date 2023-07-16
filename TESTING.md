@@ -1,6 +1,4 @@
-# **Love Barista**
-
-# Frontend Testing
+# **Love Barista - Frontend Testing**
 
 ## Table Of Contents:
 1. [Validator Testing](#vadilidator-testing)
@@ -10,17 +8,16 @@
     * [Python](#python)
     * [Lighthouse](#lighthouse)
 2. [User Story Testing](#user-story-testing)
-3. [Responsiveness Testing](#responsivness-testing)
+3. [Responsiveness Testing](#responsiveness-testing)
 4. [Browser Compatibility](#browser-compatibility)
 4. [Manual Testing](#manual-testing)
-5. [Bugs](#bugs)
 
 ## Validator Testing
 
 ### W3C HTML validator
 The site pages were run through the [W3C validator]([https://validator.w3.org/](https://validator.w3.org/nu/?showsource=yes&doc=https://8000-hannaberggr-lovebarista-4l76yoe8zfr.ws-eu101.gitpod.io/)) to check for any issues and HTML syntax errors. 
 Given the presence of Django template code in the HTML templates, the rendered HTML was copied from the Chrome browser by right clicking, selecting 'view page source' for each page of the site and then pasting directly into the HTML validator.
-No errors, but one warnings were to be found.
+No errors, but one warnings were to be found and info of "trailing slash".
 
 ![W3C HTML](static/css/images/htmlchecker.png)
 
@@ -37,8 +34,8 @@ No errors, but one warnings were to be found.
 ![JS Validator screenshot](static/css/images/jshint.png)
 
 ### Python
-- Issues with the custom python code were fixed on an ongoing basis during development using the pycodestyle tool, which was installed to the IDE, GitPod.
-- The code was also tested to check for errors using **Code Institutes pep8 online** website, [PEP8](https://pep8ci.herokuapp.com/). No errors returned as you can see from the screenshots below.
+
+- The code was tested to check for errors using **Code Institutes pep8 online** website, [PEP8](https://pep8ci.herokuapp.com/). No errors returned as you can see from the screenshots below.
 
 <details>
     <summary>admin.py</summary>  
@@ -72,7 +69,13 @@ No errors, but one warnings were to be found.
 
 [Back to the top](#table-of-contents)
 - - - 
+### Lighthouse
 
+* This is three different reads from lighthouse:
+
+![image](/static/css/images/lighthouse1.png)
+![image](/static/css/images/lighthouse2.png)
+![image](/static/css/images/lighthouse4.png)
 
 ---
 [Back to the top](#table-of-contents)
@@ -80,51 +83,47 @@ No errors, but one warnings were to be found.
 ## User story testing
 
 ##### Navigation
-*As a user I can use a navbar so that I can easily navigate on the website*
- - The Navigation at the top of the page is easy to navigate, when hovering a page in the navbar the page name gets highlighted wich helps the user to see wich page they are entering.
+
+ - The Navigation at the top of the page makes it easy for the user to navigate.
 
 #### Register
-*As a User I can create an account so that I can add my own recipes and comment on other users recipes*
- - In the Navigation bar at the top of the page, if a User clicks on the Register link, they will be brought to the registeration page wehere they can sign up, once they sign up they will be able to access full functionality of the site.
+
+ - In the Navigation bar at the top of the page, if a User clicks on the Register link, they will be brought to the registration page where they can sign up, once they sign in they will be able to access full functionality of the site.
  
 #### Signin | Signout
-*As a User I can Sign-in/Sign-out so that I can access all of the futures on the website when signed in and to maintain personal security by signing out*
- - When a User is not logged in the login link will be visible to the far right in the navigation bar, the same link will change to logut when the user is logged in.
- - When the User enters their login credentials they wil be able to access full fuctionality of the site. When the user is logged out they will not have full access on the site and their account will be secure.
+
+ - When a User is not logged in the login link will be visible in the navigation bar, the same link will change to log out when the user is logged in.
+ - When the User enters their login credentials they will be able to access full fuctionality of the site. When the user is logged out they will not have full access on the site and their account will be secure.
 
 #### View a Post
-*As a User I can view the list of posts so that I can choose one to read*
-- The user is able to click the post on the mail page and this will take them to the post page where they can view a list of recipes.
-- If they wish to view one The user must be signed in to view the post details as if they are not signed in the Read More button will be disabled.
+
+- A logged in user is able to click on a post and this will take them to the post page where they can view the post more closely. If they want, they can write a comment about the post.
+- If a user isn't logged in they can click on a post, but the field to write a comment is not showing.
 
 #### Add a Post
-*As a User I can add a recipe so that other users can view it, like it and add comments to it.*
+
 - When a user is signed in they are able to click on the Add Post button at the Post page, which will bring them to the Add Post page where they can upload their post.
 
 #### Edit | Delete a Post
-*As a User I can Edit/Delete my post so that I can update my blogpost after posting them to the website*
-- When viewing a post that the User has uploaded in the top right corner they have a choice to either delete or edit the post. A user can only edit or delete a post they are the owner for.
+
+- When viewing a post that the User has uploaded, they have a choice to either delete or edit the post. A user can only edit or delete a post that they own.
 
 #### Like | Unlike posts
-*As a User I can like/unlike posts so that I can give other users feedback without writing a comment.*
-- On the post details there is a like button below the image, it is a Love heart that is empty outline when not liked and then is filled when liked, beside it displays the number of people that like the post. A User must be logged in to access this functionality.
+
+- On the post details there is a like button below the image, it's a heart that is empty outline when not liked and it's gets populated when someone clicks on it. A User must be logged in to access this functionality.
 
 #### Add comments
-*As a User I can comment on my own and other users posts so that I can provide feedback to other users*
-- When a user is signed in and they are on the post details page for a particular post, at the bottom of the page there is a comment section where they can add a comment.
 
-#### Edit | delete comments
-*As a User I can choose to edit/delete comments so that I can update my comments after posting them to the website*
-- The User is able to edit or delete any comment that they have created by clicking on the edit or delete button in the right hand side of that comment.
+- When a user is signed in and they are on the post details page for a particular post, at the bottom of the page there is a comment section where they can add a comment.
 
 ---
 [Back to the top](#table-of-contents)
 
-## Responsiveness Testing
+## Responsiveness testing
 
-The responsive design tests were carried out manually throughout the build using Google Chrome Dev Tools. As this is primarily a browser based platform I based the main design around a desktop view, adding responsive design for tablet and mobile devices as well. 
+The responsive design tests were carried out manually throughout the build using Google Chrome Dev Tools. 
 
-During the testing process I also used the [Responsive Design Checker](https://www.responsivedesignchecker.com/) website to simulate the website on several other devices. Here is what I found:
+During the testing process I also used the [Responsive Design Checker](https://www.responsivedesignchecker.com/) website to simulate the website on several other devices. Here are my results:
 
 ### Mobile Devices
 
@@ -163,13 +162,18 @@ Appearance and functionality appear to be consistent throughout all browsers.
 
 ## Manual Testing
 
+* Only the admin can make a post puplished.
+* If the user try to create a account, a text is shown if they havn't filled in the form correct.
+* It's not possible to add a post unless the user has an account.
+* The user can like all blogpost if they have an account and are logged in.
+* The user can only delete/edit their own blogpost.
+* The admin/staff can delete/edit all posts.
+
 #### Navigation
 | Feature               | Test Performed                                                        | Result  |
 |-----------------------|-----------------------------------------------------------------------|---------|
 | Logo    | Clicking on the logo redirects the user to home page.                               | Pass    |
-| Home    | Clicking on Home link brings user to the home page.                                 | Pass    |
-| Register | When signed out clicking on the Register link, brings the user to the              |         |
-Registeration page.                                                                             | Pass    |
+| Register | When signed out clicking on the Register link, brings the user to the registration page.                                                                             | Pass    |
 | Login | When signed out, clicking on the Login link, brings the user to the login page.       | Pass    |
 | Logout | When signed in, clicking on the logout link, brings the user to the logout page.     | Pass    |
 | Correct links display | When a user is signed in or out the correct links display for both.   | Pass    |
@@ -186,17 +190,14 @@ Registeration page.                                                             
 | Feature               | Test Performed                                                        | Result    |
 |-----------------------|--------------------------------------------------------------------|-----------|
 | Responsiveness | The page is responsive on several different devices, browsers and screen widths. | Pass      |
-| Background Image | Checked to make sure background image loads correctly.                  | Pass      |
-| About Us Section | Make sure section displays correctly on all device widths               | Pass      |
+| Blog Posts | Checked to make sure images loads correctly.                  | Pass      |
 
 #### Posts
 | Feature               | Test Performed                                                     | Result    |
 |-----------------------|--------------------------------------------------------------------|-----------|
 | Responsiveness | The page is responsive on several different devices, browsers and screen widths. | Pass      |
 | Posts   | Posts cards displays as expected.                                        | Pass      |
-| Read more button | Signed In users can click the read more button under each recipe.       | Pass      |
-| Read more button | Signed Out users can't click the read more button under each post.    | Pass      |
-| Add post Button | An Add Post button is being displayed when the user is signed in.   | Pass      |
+| Add post/view old post buttons | An Add Post/view old post buttons is being displayed when the user is signed in.   | Pass      |
 | 6 Posts Per Page | Not more than 6 posts per page is being displayed.                  | Pass      |
 | Next button | A next button at the bottom of the page is being displayed if there is more than six recipes being displayed.      | Pass      |
 | Back button | A back button at the bottom of the page is being displayed if the user is on the next recipe page. | Pass      |
@@ -208,7 +209,7 @@ Registeration page.                                                             
 | Post Content   | The post content displays as expected.                                | Pass      |
 | Edit Post   | If the user is the owner of the post they can click the edit button to edit their post. | Pass      |
 | Delete Post | If the user is the owner of the post they can click the delete button to delete their post. | Pass      |
-| Signed in user access | Only singed in users can access the recipe details page.           | Pass      |
+| Signed in user access | Only singed in users can access the full detail page.           | Pass      |
 | Like button   | A clickable like button is being displayed below the post.               | Pass      |
 | Display total number of likes   | Displays the number of users that have liked the post. | Pass      |
 | Comment Section  | Displays comments added to the comment section.                         | Pass      |
@@ -223,7 +224,7 @@ Registeration page.                                                             
 | Leave Image field blank on submission  | If the user leaves the image field blank the place holder image displays after submitting. | Pass      |
 | Leave Input fields blank | The form won't submit if the user leaves required input fields blank, warnings will be displayed for the user. | Pass      |
 | Submit Button | On click it will submit the post, and bring the user to the posts page where the newly added post can be seen. | Pass      |
-| Cancel Button | On click it will bring the user back to the posts list.                  | Pass      |
+| Clicking arrow back | When the user clicks arrow back the user comes back to the previous page.    | Pass      |
 | Success Message | Success message is displayed at the top of the screen when a user clicks Submit.  | Pass      |
 
 #### Update A Post Page
@@ -232,19 +233,17 @@ Registeration page.                                                             
 | Responsiveness | The page is responsive on several different devices, browsers and screen widths. | Pass      |
 | Display form  | All the input fields displays with the orginal post.                                  | Pass      |
 | Update form  | When a user updates a post and clicks the submit button at the bottom of the page the post updates. | Pass      |
-| Update Button | On click it updates the post, and brings the user to the posts page where the updated post can be seen. | Pass      |
-| Cancel Button | On click it brings the user back to the recipes list.                  | Pass      |
+| Update Button | On click it, updates the post, and brings the user to the posts page where the updated post can be seen. | Pass      |
+| Clicking arrow back | When the user clicks arrow back the user comes back to the previous page.    | Pass      |
 | Success Message | A success message is displayed at the top of the screen when a user clicks update.  | Pass      |
 
-#### Delete A Post Modal
+#### Delete A Post
 | Feature               | Test Performed                                                     | Result    |
 |-----------------------|--------------------------------------------------------------------|-----------|
 | Responsiveness | The page is responsive on several different devices, browsers and screen widths. | Pass      |
-| Yes Button | When the user clicks the yes button the post will be deleted.                 | Pass      |
-| Cancel Button | When the user clicks the cancel button, the delete modal will disappear and the user will be back on the posts page.     | Pass      |
-| Clicking Outside The Modal | When the user clicks anywhere ouside the modal the modal will disappear.    | Pass      |
-| X  | When the user clicks on the X button at the top of the modal, the modal disappears.   | Pass      |
-| Success Message | Success message is displayed at the top of the screen when a user clicks yes on the delete modal.  | Pass      |
+| Delete Button | When the user clicks the Delete button the post will be deleted.                 | Pass      |
+| Clicking arrow back | When the user clicks arrow back the user comes back to the previous page.    | Pass      |
+| Success Message | A success message is displayed at the top of the screen when a user clicks on delete.  | Pass      |
 
 #### Register Page
 | Feature               | Test Performed                                                     | Result    |
@@ -275,7 +274,7 @@ Registeration page.                                                             
 | Feature               | Test Performed                                                     | Result    |
 |-----------------------|--------------------------------------------------------------------|-----------|
 | Responsiveness | The page is responsive on several different devices, browsers and screen widths. | Pass      |
-| Sign Out Button | When clicked it Signs out the user and redirect them to the login page.  | Pass      |
+| Sign Out Button | When you click sign out button, the user is signed out and redirect to the login page.  | Pass      |
 | Success Message | Success message is displayed at the top of the screen after clicking Sign Out to let the user know they have logged out. | Pass      |
 
 

@@ -62,13 +62,11 @@ Wireframes that where created in [Balsamiq](https://balsamiq.com/) for this proj
 ### User Stories
 After the first planning phase user stories were implemented one by one. The wireframes created became the base for the User stories. 
 
-Individual user stories were categorised according to whether they had to be implemented to produce a Minimum Viable Product (MVP), with priority for development to be given to those that were part of the MVP specification. 
-
-The user stories that where created can be found [here](https://github.com/users/malinpalo/projects/9) and are added below.
+The user stories that where created can be found [here](https://github.com/users/HannaBerggren/projects/6/views/1)
 
 ### Agile Methodology
 GitHub issues, milestones and projects were used to document and track an agile development approach.
-An issue was created for each user story. These were labelled as 'MVP' if they were part of the MVP spec. All user stories were then added to a 'Product Backlog' milestone  [Link to product backlog]().
+An issue was created for each user story. All user stories were then added to a 'Product Backlog' milestone [Link to product backlog](https://github.com/HannaBerggren/Love-Barista/milestone/1).
 
 I set up a plan for development this plan was just to show how it could work in real life. Development was divided into iterations with a timebox of four working days, each with a total value of 16 story points. The duration in calendar days was variable during development, due to fitting the four working days around work and other commitments. A milestone and a GitHub project board (a Kanban board) were created for each iteration, and user stories moved from the Product Backlog and into iterations as each cycle of work began. They were labelled as 'must have', 'could have' or 'should have' goals for the iteration, and assigned story point values. Story points for 'must have' user stories never exceeded 9 (60%).
 
@@ -148,7 +146,7 @@ can choose between the create blogpost page or the manage blogpost page.
 * Create a blogpost offers the user to easily pick when they want to make their post.
 
 ![Image](/static/css/images/create-manage.png)
-
+![Image](/static/css/images/shareblogpost.png)
 
 
 ### Logout
@@ -166,7 +164,7 @@ can choose between the create blogpost page or the manage blogpost page.
 
 ![Image](/static/css/images/footer-.png)
 
-
+### Edit Page
 
 ### Edit Page
 
