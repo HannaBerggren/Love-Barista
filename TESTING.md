@@ -2,8 +2,8 @@
 
 ## Table Of Contents:
 1. [Validator Testing](#vadilidator-testing)
-    * [Html](#html)
     * [CSS](#css)
+    * [Html](#html)
     * [JavaScript](#javascript)
     * [Python](#python)
     * [Lighthouse](#lighthouse)
@@ -14,6 +14,12 @@
 
 ## Validator Testing
 
+### CSS
+- The CSS stylesheet was put through the [W3C validator](https://jigsaw.w3.org/css-validator/)  to check for errors.
+- No errors were found.
+
+![W3C CSS](static/css/images/w3c.png)  
+
 ### W3C HTML validator
 The site pages were run through the [W3C validator]([https://validator.w3.org/](https://validator.w3.org/nu/?showsource=yes&doc=https://8000-hannaberggr-lovebarista-4l76yoe8zfr.ws-eu101.gitpod.io/)) to check for any issues and HTML syntax errors. 
 Given the presence of Django template code in the HTML templates, the rendered HTML was copied from the Chrome browser by right clicking, selecting 'view page source' for each page of the site and then pasting directly into the HTML validator.
@@ -21,11 +27,7 @@ No errors, but one warnings were to be found and info of "trailing slash".
 
 ![W3C HTML](static/css/images/htmlchecker.png)
 
-### CSS
-- The CSS stylesheet was put through the [W3C validator](https://jigsaw.w3.org/css-validator/)  to check for errors.
-- No errors were found.
 
-![W3C CSS](static/css/images/w3c.png)  
 
 ### JavaScript
 - The Javascript file was put through the [Jshint](https://jshint.com/) to check for errors. 
@@ -71,18 +73,19 @@ No errors, but one warnings were to be found and info of "trailing slash".
 - - - 
 ### Lighthouse
 
-* This is three different reads from lighthouse:
+* This is four different reads from lighthouse:
 
 ![image](/static/css/images/lighthouse1.png)
 ![image](/static/css/images/lighthouse2.png)
+![image](/static/css/images/lighthouse3.png)
 ![image](/static/css/images/lighthouse4.png)
 
 ---
 [Back to the top](#table-of-contents)
 
-## User story testing
+## User Story testing
 
-##### Navigation
+#### Navigation
 
  - The Navigation at the top of the page makes it easy for the user to navigate.
 
@@ -151,7 +154,7 @@ During the testing process I also used the [Responsive Design Checker](https://w
 
 ### Browser Compatibility 
 
-Happening was tested on the following browsers:
+Love Barista was tested on the following browsers:
 
 - Google Chrome
 - Mozilla Firefox
@@ -165,9 +168,9 @@ Appearance and functionality appear to be consistent throughout all browsers.
 * Only the admin can make a post puplished.
 * If the user try to create a account, a text is shown if they havn't filled in the form correct.
 * It's not possible to add a post unless the user has an account.
-* The user can like all blogpost if they have an account and are logged in.
+* The user can like all blogposts if they have an account and are logged in.
 * The user can only delete/edit their own blogpost.
-* The admin/staff can delete/edit all posts.
+* The admin can delete/edit all posts.
 
 #### Navigation
 | Feature               | Test Performed                                                        | Result  |

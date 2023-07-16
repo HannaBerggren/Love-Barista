@@ -21,6 +21,8 @@
     * [Create Blogpost](#create-blogpost)
     * [Login Page](#login-page)
     * [Logout Page](#logout-page)
+    * [Comment Page](#comment-page)
+    * [Liked Comment](#liked-comment)
     * [Edit Page](#edit-page)
     * [Delete Page](#delete-page)
     * [Footer](#footer)
@@ -153,6 +155,18 @@ can choose between the create blogpost page or the manage blogpost page.
 
 ![Image](/static/css/images/sign-out.png)
 
+### Comment page
+
+* This page is where the user can make a comment.
+
+![Image](/static/css/images/comment.png)
+
+### Liked comment
+
+* A number of likes and how many comments a post have is showing like this:
+
+![Image](/static/css/images/comments-heart.png)
+
 ### Edit Page
 
 ![Edit page](/static/css/images/editpost.png)
@@ -188,6 +202,8 @@ can choose between the create blogpost page or the manage blogpost page.
 * [Bootstrap 5](https://www.w3schools.com/bootstrap5/bootstrap_get_started.php) - for design and placement
 * [PEP8](http://pep8online.com/) - for testing and validating the code.
 * [Google Fonts](https://fonts.google.com/about) - for the font of the text
+* [Pexels](https://www.pexels.com/sv-se/) - for pictures for the site
+* [Google](https://www.google.com) - for pictures for the site
 * [Coolors](https://coolors.co/) - for the coloring of the page
 * [Hostinger](https://www.hostinger.com/) - for adding favicon
 * [Flaticon](https://www.flaticon.com/) - for finding favicon

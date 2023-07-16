@@ -2,6 +2,7 @@
 {% load static %}
 {% load crispy_forms_tags %}
 {% block content %}
+<!-- Options for the user posts -->
 <section id="user-posts">
     <div class="container">
         <div class="row">
@@ -16,9 +17,9 @@
         <div class="row g-0">
             <div class="col-md-10 mx-auto p-md-3">
                 <div class="row">
-                    <!-- if the user have added post-->
+                    <!-- If the user have added post-->
                     {% if post_list|length > 0 %}
-                    <!-- loops through the posts have been posted by the logged in user -->
+                    <!-- Loops through the posts that have been posted by the logged in user -->
                     {% for post in post_list %}
                     <div class="col-md-10 offset-md-1 text-center my-3">
                         <div class="card mb-4">
@@ -43,6 +44,7 @@
                                 <div class="card-text">
                                     {{ post.content | slice:":280" | safe }}...
                                 </div>
+                                <!-- Date of created post, author, liked heart and number of comments -->
                                 <div class="card-footer">
                                     <span>Author: {{ post.author }} | </span>
                                     <span>{{ post.created_on}} | </span>
@@ -53,7 +55,7 @@
                         </div>
                     </div>
                     {% endfor %}
-                    <!-- if the user have NOT shared any post, the Create New button below will display -->
+                    <!-- if the user have not shared any post, the Create New button below will display -->
                     {% else %}
                     <div class="container text-center mt-4">
                         <div class="text-dark">
