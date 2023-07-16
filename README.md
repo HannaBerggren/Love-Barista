@@ -12,7 +12,7 @@
     * [Wireframes](#wireframes)
     * [Agile Methodology](#agile-methodology)
     * [Typography](#typography)
-    * [Colour Scheme](#colour-scheme)
+    * [Color Scheme](#color-scheme)
     * [Database Diagram](#database-diagram)    
 3. [Features](#features)
     * [Navigation Bar](#navigation-bar)  
@@ -23,11 +23,12 @@
     * [Logout Page](#logout-page)
     * [Edit Page](#edit-page)
     * [Delete Page](#delete-page)
-    * [footer](#footer)
+    * [Footer](#footer)
 
 4. [Future Features](#future-features)
 5. [Technologies Used](#technologies-used)
 6. [Testing](#testing)
+7. [Bugs](#bugs)
 7. [Deployment](#deployment)
 8. [Credits](#credits)
 9. [Acknowledgements](#acknowledgements)
@@ -68,12 +69,11 @@ The user stories that where created can be found [here](https://github.com/users
 GitHub issues, milestones and projects were used to document and track an agile development approach.
 An issue was created for each user story. All user stories were then added to a 'Product Backlog' milestone [Link to product backlog](https://github.com/HannaBerggren/Love-Barista/milestone/1).
 
-I set up a plan for development this plan was just to show how it could work in real life. Development was divided into iterations with a timebox of four working days, each with a total value of 16 story points. The duration in calendar days was variable during development, due to fitting the four working days around work and other commitments. A milestone and a GitHub project board (a Kanban board) were created for each iteration, and user stories moved from the Product Backlog and into iterations as each cycle of work began. They were labelled as 'must have', 'could have' or 'should have' goals for the iteration, and assigned story point values. Story points for 'must have' user stories never exceeded 9 (60%).
+I set up a plan for development this plan was just to show how it could work in real life. A milestone and a GitHub project board (a Kanban board) were created for each iteration, and user stories moved from the Product Backlog and into iterations as each cycle of work began. They were labelled as 'must have' goals for the iteration, and assigned story point values.
 
 A project Kanban board was used to track progress, with user stories moved between 'Todo', 'In Progress' and 'Done' columns as appropriate. 
 ![Image](/static/css/images/kanbanboard.png)
 
-There was consideable uncertainty as to how many story point to allocate to each task. Therefore the first iteration had tasks exceeding 16 storie points in total. Tasks that didn't finish in time where to be moved in to the next iteration.
 
 ### Typography
 
@@ -81,8 +81,8 @@ There was consideable uncertainty as to how many story point to allocate to each
 
 ### Icons and Images
 
-* All icons used throughout the site were provided by [FontAwesome](https://fontawesome.com/)
-* I sourced an icon from [Flaticon](https://www.flaticon.com). I then used [Favicon](https://favicon.io/) to convert this png to an icon file and imported that to my site. I installed a Favicon to help users distinguish this tab from others in their browser, a simple coffee-related design and with hearts because it felt like fun.
+* All icons used throughout the site were provided by [Font Awesome](https://fontawesome.com/)
+* I sourced an icon from [Flaticon](https://www.flaticon.com). And then I used [Favicon](https://favicon.io/) to convert this png to an icon file and imported that to my site. I installed a Favicon to help users clarify this tab from others in their browser, a simple coffee-related design and with hearts because it felt like fun.
 
 ### Color Scheme
 
@@ -126,20 +126,13 @@ Navigation bar on mobile and tablets
 
 ![Image](/static/css/images/homepage.png)
 
-### Register
+### Register page
 
 * Makes it available for a new user to create an account, you have to have an account to be able to make a blogpost.
 
 ![Image](/static/css/images/signup.png)
 
-### Login
-
-* This page is where the user can log in. 
-
-![Image](/static/css/images/sign-in.png)
-
-
-### Create/manage blogpost
+### Create blogpost
 
 * After you have register, after that when you click on your name in the navbar, you
 can choose between the create blogpost page or the manage blogpost page.
@@ -148,23 +141,17 @@ can choose between the create blogpost page or the manage blogpost page.
 ![Image](/static/css/images/create-manage.png)
 ![Image](/static/css/images/shareblogpost.png)
 
+### Login page
 
-### Logout
+* This page is where the user can log in. 
+
+![Image](/static/css/images/sign-in.png)
+
+### Logout page
 
 * This page is where the user can log out if they want.
 
 ![Image](/static/css/images/sign-out.png)
-
-### Footer
-
-- The footer is found at the bottom of every page and is responsive for small and large screens.
-- The footer displays author and icons for Facebook, Twitter, Instagram and Google. These are all in different colours to pop out to get the viewers interest.
-- When any of the icons are clicked the social media site opens on a seperate tab, this way the user still has the Love Barista website open so they can easily navigate back to it.
-
-
-![Image](/static/css/images/footer-.png)
-
-### Edit Page
 
 ### Edit Page
 
@@ -175,86 +162,49 @@ can choose between the create blogpost page or the manage blogpost page.
 
 ![Delete page](/static/css/images/delete.png)
 
+### Footer
+
+- The footer is found at the bottom of every page and is responsive for small and large screens.
+- The footer displays author and icons for Facebook, Twitter, Instagram and Google. These are all in different colours to pop out to get the viewers interest.
+- When any of the icons are clicked the social media site opens on a seperate tab, this way the user still has the Love Barista website open so they can easily navigate back to it.
 
 
-## Future Features
+![Image](/static/css/images/footer-.png)
+
+### Future features
+
+* I would like to add a map function to point out where the location is
+* I would like to spend more time on the styling and make sure it looks even better.
+
+## Technologies used
+
+* [GitHub](https://github.com/) - to host the repositories
+* [Gitpod](https://www.gitpod.io/) - as the IDE for the application
+* [Elephantsql](https://www.elephantsql.com/) - for the postgresql
+* [Python](https://docs.python.org/3/contents.html) - primary language of the application.
+* [HTML](https://www.w3schools.com/html/) - Structure/skeleton of the page
+* [CSS](https://www.w3schools.com/css/) - extra styling of the webpage
+* [Stack overflow](https://stackoverflow.com/) - basic explaining 
+* [Bootstrap 5](https://www.w3schools.com/bootstrap5/bootstrap_get_started.php) - for design and placement
+* [PEP8](http://pep8online.com/) - for testing and validating the code.
+* [Google Fonts](https://fonts.google.com/about) - for the font of the text
+* [Coolors](https://coolors.co/) - for the coloring of the page
+* [Hostinger](https://www.hostinger.com/) - for adding favicon
+* [Flaticon](https://www.flaticon.com/) - for finding favicon
+* [Favicon](https://favicon.io/) - to generate the favicon and making download
 
 ## Testing
 
 Please click [**_here_**](TESTING.md) to read more information about testing Love Barista.
 
-## Technologies 
-
-* [GitHub](https://github.com/) - to host the repositories.
-* [Gitpod](https://www.gitpod.io/) - as the IDE for the application.
-* [Elephantsql](https://www.elephantsql.com/) - for the postgresql
-* [Python](https://docs.python.org/3/contents.html) - primary language of the application.
-* [HTML](https://www.w3schools.com/html/) - Structure/skeleton of the page
-* [CSS](https://www.w3schools.com/css/) - extra styling of the webpage
-* [Javascript](https://www.w3schools.com/js/) - the apply some extra button functions that I wanted
-* [Stack overflow](https://stackoverflow.com/) - basic explaining 
-* [Bootstrap 5](https://www.w3schools.com/bootstrap5/bootstrap_get_started.php) - for design and placement
-* [PEP8](http://pep8online.com/) - for testing and validating the code.
-* [Google Fonts](https://fonts.google.com/about) - for the font of the text
-* Love Barista is a blog post for everyone who likes or love coffee. This app is a blog designed so that visitors and staff easily can manage the posts by them self. Both parties can post, view, change and delete their blogposts as per their own liking. 
-
-
-
-## Planning
-
-* This project was developed through the Kanban board, you can find this via the github projects. Here the developer creates cards to help them during the development, this is mainly to make it easier to keep track of the different user stories and make sure everything is completed.
-
-### Features left to implement
-
-* I would like to add a map function to point out where the location is
-* I would like to spend smore time on the styling and make sure it looks even better.
-* I would like to add a favicon for a better layout.
-
-### Images
-
-* images used in the project were all found on google.
-
-
-## Admin Page
+Admin Page
 * Admin has access via the default Django Admin page. The Admin login can be accessed from the navigation menus once a superuser has logged in. Once logged in, Admin users have all the access to create, edit and delete all bookings. All the requests can be viewed from the admin page.
 
-## Technologies 
+* Love Barista is a blog post for everyone who likes or love coffee. This app is a blog designed so that visitors and staff easily can manage the posts by them self. Both parties can post, view, change and delete their blogposts as per their own liking.
 
-* [GitHub](https://github.com/) - to host the repositories.
-* [Gitpod](https://www.gitpod.io/) - as the IDE for the application.
-* [Elephantsql](https://www.elephantsql.com/) - for the postgresql
-* [Python](https://docs.python.org/3/contents.html) - primary language of the application.
-* [HTML](https://www.w3schools.com/html/) - Structure/skeleton of the page
-* [CSS](https://www.w3schools.com/css/) - extra styling of the webpage
-* [Javascript](https://www.w3schools.com/js/) - the apply some extra button functions that I wanted
-* [Stack overflow](https://stackoverflow.com/) - basic explaining 
-* [Bootstrap 5](https://www.w3schools.com/bootstrap5/bootstrap_get_started.php) - for design and placement
-* [PEP8](http://pep8online.com/) - for testing and validating the code.
-* [Google Fonts](https://fonts.google.com/about) - for the font of the text
+## Bugs
 
-
-## Testing
-
-### Lighthouse
-
-* This is the read from lighthouse:
-
-![image](/static/css/images/lighthouse1.png)
-![image](/static/css/images/lighthouse2.png)
-![image](/static/css/images/lighthouse4.png)
-
-### Manual testing
-
-* Only the admin can make a post puplished.
-* If the user try to create a account, a text is shown if they havn't filled in the form correct.
-* It is not possible to add a post unless the user has an account.
-* The user can like all blogpost if they have an account and are logged in.
-* The user can only delete/edit their own blogpost.
-* The admin/staff can delete/edit all posts.
-
-### Bugs
-
-* 
+* None that I'm aware of
 
 ## Deployment
 
@@ -313,7 +263,9 @@ code in your IDE: pip3 freeze > requirements.txt
 
 ### Acknowledgements
 * This Love Barista Blog was created as Portfolio Project 4 for the the Full Stack Software Developer diploma by the [Code Institute](https://codeinstitute.net/).
-* I would like to thank the tutors at code institute for being extremely helpful considering my many questions and to my partner who helped me with mental support. And once again, thanks to my cousin for helping me with so many things!
+* I would like to thank the tutors at Code Institute for being very helpful 
+* My partner who helped me with mental support. 
+* And once again, thanks to my cousin for helping me with so many things!
 
 
 Hanna Berggren, 2023
