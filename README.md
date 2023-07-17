@@ -2,7 +2,7 @@
 
 ![Image](/static/css/images/responsive.png)
 
-[Live Site](https://8000-hannaberggr-lovebarista-4l76yoe8zfr.ws-eu101.gitpod.io/)
+[Live Site](https://love-barista-blog.herokuapp.com/)
 
 ## Table Of Contents:
 1. [Project Goals](#project-goals)
