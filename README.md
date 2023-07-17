@@ -49,7 +49,7 @@
 
 ### CRUD functionality
 
-Love Barista features a data store with full Create, Read, Update and Delete functionality.
+Love Barista features a data store with Create, Read, Update and Delete functionality.
 
 - Create - users can create a user account and create a blogpost.
 - Read - users can view the posts of other users. Authenticated users can read comments about all blogposts.
@@ -58,21 +58,21 @@ Love Barista features a data store with full Create, Read, Update and Delete fun
 
 ## UX Design:
 
-### Wireframes
-Wireframes was created in [Balsamiq](https://balsamiq.com/) for this project and are displayed below. The wireframes were  created in the planning phase of the project. Please note that changes have been made during the course of the work.
-
-![design image](/static/css/images/wireframe.png)
-
 ### User Stories
 After the first planning phase user stories were implemented one by one. The wireframes created became the base for the User stories. 
 
 The user stories that where created can be found [here](https://github.com/users/HannaBerggren/projects/6/views/1)
 
-### Agile Methodology
-GitHub issues, milestones and projects were used to document and track an agile development approach.
-An issue was created for each user story. All user stories were then added to a 'Product Backlog' milestone [Link to product backlog](https://github.com/HannaBerggren/Love-Barista/milestone/1).
+### Wireframes
+Wireframes was created in [Balsamiq](https://balsamiq.com/) for this project and are displayed below. The wireframes were  created in the planning phase of the project. Please note that changes have been made during the course of the work.
 
-I set up a plan for development and this was performed to see how it would work in real life. A milestone and a GitHub project board (a Kanban board) were created for each iteration, and user stories moved from the Product Backlog and into iterations as each cycle of work began. They were labelled as 'must have' goals for the iteration and assigned story point values.
+![design image](/static/css/images/wireframe.png)
+
+### Agile Methodology
+
+An issue was created for each user story to track a agile approach. All user stories were then added to a 'Product Backlog' milestone [Link to product backlog](https://github.com/HannaBerggren/Love-Barista/milestone/1).
+
+I set up a plan for development and this was performed to see how it would work in real life. A milestone and a GitHub project board (a Kanban board) were created and user stories moved from the Product Backlog and into the kanban board as each cycle of work began. They were all labelled as 'must have' goals.
 
 A project Kanban board was used to track progress, with user stories moved between 'Todo', 'In Progress' and 'Done' columns as appropriate. 
 ![Image](/static/css/images/kanbanboard.png)
@@ -101,6 +101,8 @@ I created an entity relationship diagram using LucidCharts.
 ![ERD](/static/css/images/erd.png)
 
 ### Design Image
+
+If the user chooses not to post an image, this image will appear.
 
 ![design image](/static/css/images/lovebarista.jpg)
 
@@ -170,10 +172,14 @@ can choose between the create blogpost page or the manage blogpost page.
 
 ### Edit Page
 
+* This page is where the user can update a post.
+
 ![Edit page](/static/css/images/editpost.png)
 ![Edit page](/static/css/images/update.png)
 
 ### Delete Page
+
+* This is where the user kan delete a post.
 
 ![Delete page](/static/css/images/delete.png)
 

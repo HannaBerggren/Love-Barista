@@ -122,7 +122,7 @@ No errors, but one warnings were to be found and info of "trailing slash".
 ---
 [Back to the top](#table-of-contents)
 
-## Responsiveness testing
+### Responsiveness testing
 
 The responsive design tests were carried out manually throughout the build using Google Chrome Dev Tools. 
 
