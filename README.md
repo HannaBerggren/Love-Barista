@@ -32,13 +32,13 @@
 6. [Testing](#testing)
 7. [Bugs](#bugs)
 8. [Fixed Bugs](#fixed-bugs)
-7. [Deployment](#deployment)
-8. [Credits](#credits)
-9. [Acknowledgements](#acknowledgements)
+9. [Deployment](#deployment)
+10. [Credits](#credits)
+11. [Acknowledgements](#acknowledgements)
 
 ### Project goals
 
-* This site is created with the intention to help the coffee lovers around the world to share their passion for coffee. They should be able to view and change the blogpost if they think it should be neccessary.
+* This site is created with the intention to help the coffee lovers around the world to share their passion for coffee. It should be a meeting place where users can share café tips, barista places and tips on the best beans! They should be able to view and change the blogpost if they think it should be neccessary.
 
 ### First time user goals
 * As a first time user I want the navigation to be simple
@@ -59,9 +59,9 @@ Love Barista features a data store with Create, Read, Update and Delete function
 ## UX Design:
 
 ### User Stories
-After the first planning phase user stories were implemented one by one. The wireframes created became the base for the User stories. 
+After the first planning phase the User Stories were implemented one by one. The wireframes created became the base for the User Stories. 
 
-The user stories that where created can be found [here](https://github.com/users/HannaBerggren/projects/6/views/1)
+The User Stories that where created can be found [here](https://github.com/users/HannaBerggren/projects/6/views/1)
 
 ### Wireframes
 Wireframes was created in [Balsamiq](https://balsamiq.com/) for this project and are displayed below. The wireframes were  created in the planning phase of the project. Please note that changes have been made during the course of the work.
@@ -80,12 +80,14 @@ A project Kanban board was used to track progress, with user stories moved betwe
 
 ### Typography
 
-[Google Fonts](https://fonts.google.com/) was used to import the fonts featured in the site, my logo is in dancing script and the rest of the text is in el-messiri.
+[Google Fonts](https://fonts.google.com/) was used to import the fonts featured in the site.
+* My logo is in dancing script.
+* The rest of the text is in el-messiri.
 
 ### Icons and Images
 
 * All icons used throughout the site were provided by [Font Awesome](https://fontawesome.com/)
-* I sourced an icon from [Flaticon](https://www.flaticon.com). And then I used [Favicon](https://favicon.io/) to convert this png to an icon file and imported that to my site. I installed a Favicon to help users clarify this tab from others in their browser, a coffee-related design and with hearts because it felt like fun.
+* I sourced an icon from [Flaticon](https://www.flaticon.com) and then I used [Favicon](https://favicon.io/) to convert this png to an icon file and imported that to my site. I installed a Favicon to help users clarify this tab from others in their browser, a coffee-related design and with hearts because it felt like fun.
 
 ### Color Scheme
 
@@ -96,7 +98,7 @@ I used [Coolors](https://coolors.co/) to generate a color scheme from the defaul
 
 ### Database Diagram
 
-I created an entity relationship diagram using LucidCharts.
+I created an entity relationship diagram using [LucidCharts](https://lucid.app/documents#/documents?folder_id=recent).
 
 ![ERD](/static/css/images/erd.png)
 
@@ -110,12 +112,12 @@ If the user chooses not to post an image, this image will appear.
 
 ### Navigation Bar
 
-- The Navigation bar sits at the very top of each page, The logo is at the left hand side and the navigation links are next to it, a short summary of the page is about is written on the right.
-- When logged in the **Login** becomes **Logout** and the **Registeration** link is removed.
+- The Navigation bar sits at the very top of each page. The logo is at the left hand side and the navigation links are next to it, a short summary of what the page is about, is written on the right.
+- When logged in, the **Login** becomes **Logout** and the **Registeration** link is removed.
 - The Navbar background is white with the Navigation links and logo in black and darkgreen colored text.
-- When the logo is clicked it redirects the user to the home page.
+- When the logo is clicked, it redirects the user to the home page.
 - On large to xx-large screens the navigation bar covers the entire page.
-- When on medium to small screens the navigation menu changes to burger menu which shows all the nav links when clicked on (see the two screenshots below).
+- When on medium to small screens the navigation menu changes to a burger menu which shows all the nav links when clicked on (see the two screenshots below).
 
 ![NavBar](static/css/images/navbar.png)
 
@@ -202,13 +204,15 @@ can choose between the create blogpost page or the manage blogpost page.
 
 * [GitHub](https://github.com/) - to host the repositories
 * [Gitpod](https://www.gitpod.io/) - as the IDE for the application
-* [Elephantsql](https://www.elephantsql.com/) - for the postgresql
-* [Python](https://docs.python.org/3/contents.html) - primary language of the application.
+* [Elephantsql](https://www.elephantsql.com/) - was used to host the database for this site
+* [Heroku](https://id.heroku.com/login) - was used in addition to Github as the deployment platform for this site, due to the use of databases
+* [Python](https://docs.python.org/3/contents.html) - primary language of the application
+* [Django](https://www.djangoproject.com/) - was used as a Python framework
 * [HTML](https://www.w3schools.com/html/) - Structure/skeleton of the page
 * [CSS](https://www.w3schools.com/css/) - extra styling of the webpage
 * [Stack overflow](https://stackoverflow.com/) - basic explaining 
 * [Bootstrap 5](https://www.w3schools.com/bootstrap5/bootstrap_get_started.php) - for design and placement
-* [PEP8](http://pep8online.com/) - for testing and validating the code.
+* [PEP8](http://pep8online.com/) - for testing and validating the code
 * [Google Fonts](https://fonts.google.com/about) - for the font of the text
 * [Pexels](https://www.pexels.com/sv-se/) - for pictures for the site
 * [Google](https://www.google.com) - for pictures for the site
@@ -222,12 +226,9 @@ can choose between the create blogpost page or the manage blogpost page.
 
 Please click [**_here_**](TESTING.md) to read more information about testing Love Barista.
 
-Admin Page
-* Admin has access via the default Django Admin page. The Admin login can be accessed from the navigation menus once a superuser has logged in. Once logged in, Admin users have all the access to create, edit and delete all posts. All the requests can be viewed from the admin page.
-
 ## Bugs
 
-* None that I'm aware of
+* None that I'm aware of.
 
 ## Fixed bugs
 
@@ -289,8 +290,8 @@ code in your IDE: pip3 freeze > requirements.txt
 * I used Code Institute's I Think Therefore I Blog (walkthrough project) for guidance with code structure and deployment steps. It was really helpful and helped me alot along the way.
 
 ### Acknowledgements
-* This Love Barista Blog was created as Portfolio Project 4 for the the Full Stack Software Developer diploma by the [Code Institute](https://codeinstitute.net/).
-* I would like to thank the tutors at Code Institute for being very helpful 
+* Love Barista Blog was created as Portfolio Project 4 for the the Full Stack Software Developer diploma by [Code Institute](https://codeinstitute.net/).
+* I would like to thank the tutors at Code Institute for being very helpful.
 * My partner who helped me with mental support. 
 * And once again, thanks to my cousin for helping me with so many things!
 
