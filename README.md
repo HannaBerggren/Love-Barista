@@ -111,7 +111,7 @@ I created an entity relationship diagram using LucidCharts.
 - When logged in the **Login** becomes **Logout** and the **Registeration** link is removed.
 - The Navbar background is white with the Navigation links and logo in black and darkgreen colored text.
 - When the logo is clicked it redirects the user to the home page.
-- On large to xx-large screens the navigation bar is in the center of the page.
+- On large to xx-large screens the navigation bar covers the entire page.
 - When on medium to small screens the navigation menu changes to burger menu which shows all the nav links when clicked on (second two screenshot below).
 
 ![NavBar](static/css/images/navbar.png)
