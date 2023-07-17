@@ -1,4 +1,4 @@
-# **Love Barista - Frontend Testing**
+# **Love Barista** - Frontend Testing
 
 ## Table Of Contents:
 1. [Validator Testing](#vadilidator-testing)
@@ -20,10 +20,10 @@
 
 ![W3C CSS](static/css/images/w3c.png)  
 
-### W3C HTML validator
+### HTML
 The site pages were run through the [W3C validator]([https://validator.w3.org/](https://validator.w3.org/nu/?showsource=yes&doc=https://8000-hannaberggr-lovebarista-4l76yoe8zfr.ws-eu101.gitpod.io/)) to check for any issues and HTML syntax errors. 
-Given the presence of Django template code in the HTML templates, the rendered HTML was copied from the Chrome browser by right clicking, selecting 'view page source' for each page of the site and then pasting directly into the HTML validator.
-No errors, but one warnings were to be found and info of "trailing slash".
+
+No errors were to be found.
 
 ![W3C HTML](static/css/images/htmlchecker.png)
 
@@ -159,20 +159,25 @@ Love Barista was tested on the following browsers:
 - Google Chrome
 - Mozilla Firefox
 
-Appearance and functionality appear to be consistent throughout all browsers. 
+Appearance and functionality appear to be consistent throughout all browsers.
+
 ---
 [Back to the top](#table-of-contents)
 
 ## Manual Testing
 
-* Only the admin can make a post puplished.
+Admin Page
+* Admin has access via the default Django Admin page. 
+* The Admin login can be accessed from the navigation menus once a superuser has logged in. Once logged in, Admin users have all the access to create, edit and delete all posts. 
+* All the requests can be viewed from the admin page.
+
+Users
 * If the user try to create a account, a text is shown if they havn't filled in the form correct.
 * It's not possible to add a post unless the user has an account.
 * The user can like all blogposts if they have an account and are logged in.
 * The user can only delete/edit their own blogpost.
-* The admin can delete/edit all posts.
 
-#### Navigation
+### Navigation
 | Feature               | Test Performed                                                        | Result  |
 |-----------------------|-----------------------------------------------------------------------|---------|
 | Logo    | Clicking on the logo redirects the user to home page.                               | Pass    |
@@ -182,20 +187,20 @@ Appearance and functionality appear to be consistent throughout all browsers.
 | Correct links display | When a user is signed in or out the correct links display for both.   | Pass    |
 | Responsiveness | Checked to make sure it changes to burger menu on smaller devices.           | Pass    |
 
-#### Footer
+### Footer
 | Feature               | Test Performed                                                        | Result  |
 |-----------------------|-----------------------------------------------------------------------|---------|
 | External links | Clicking on social media links opens on a new page.                          | Pass    |
 | Displays correctly on all pages | Made sure it displays correctly on all pages.               | Pass    |
 | Responsiveness | Checked to make sure link icons display correctly on smaller devices.        | Pass    |
 
-#### Home
+### Home
 | Feature               | Test Performed                                                        | Result    |
 |-----------------------|--------------------------------------------------------------------|-----------|
 | Responsiveness | The page is responsive on several different devices, browsers and screen widths. | Pass      |
 | Blog Posts | Checked to make sure images loads correctly.                  | Pass      |
 
-#### Posts
+### Posts
 | Feature               | Test Performed                                                     | Result    |
 |-----------------------|--------------------------------------------------------------------|-----------|
 | Responsiveness | The page is responsive on several different devices, browsers and screen widths. | Pass      |
@@ -205,7 +210,7 @@ Appearance and functionality appear to be consistent throughout all browsers.
 | Next button | A next button at the bottom of the page is being displayed if there is more than six recipes being displayed.      | Pass      |
 | Back button | A back button at the bottom of the page is being displayed if the user is on the next recipe page. | Pass      |
 
-#### Post Details Page
+### Post Details Page
 | Feature               | Test Performed                                                     | Result    |
 |-----------------------|--------------------------------------------------------------------|-----------|
 | Responsiveness | The page is responsive on several different devices, browsers and screen widths. | Pass      |
@@ -218,7 +223,7 @@ Appearance and functionality appear to be consistent throughout all browsers.
 | Comment Section  | Displays comments added to the comment section.                         | Pass      |
 | Post Comment   | Allows users to post a comment and display it in the comment section.     | Pass      |
 
-#### Add A Post Page
+### Add A Post Page
 | Feature               | Test Performed                                                     | Result    |
 |-----------------------|--------------------------------------------------------------------|-----------|
 | Responsiveness | The page is responsive on several different devices, browsers and screen widths. | Pass      |
@@ -230,7 +235,7 @@ Appearance and functionality appear to be consistent throughout all browsers.
 | Clicking arrow back | When the user clicks arrow back the user comes back to the previous page.    | Pass      |
 | Success Message | Success message is displayed at the top of the screen when a user clicks Submit.  | Pass      |
 
-#### Update A Post Page
+### Update A Post Page
 | Feature               | Test Performed                                                     | Result    |
 |-----------------------|--------------------------------------------------------------------|-----------|
 | Responsiveness | The page is responsive on several different devices, browsers and screen widths. | Pass      |
@@ -240,7 +245,7 @@ Appearance and functionality appear to be consistent throughout all browsers.
 | Clicking arrow back | When the user clicks arrow back the user comes back to the previous page.    | Pass      |
 | Success Message | A success message is displayed at the top of the screen when a user clicks update.  | Pass      |
 
-#### Delete A Post
+### Delete A Post
 | Feature               | Test Performed                                                     | Result    |
 |-----------------------|--------------------------------------------------------------------|-----------|
 | Responsiveness | The page is responsive on several different devices, browsers and screen widths. | Pass      |
@@ -248,7 +253,7 @@ Appearance and functionality appear to be consistent throughout all browsers.
 | Clicking arrow back | When the user clicks arrow back the user comes back to the previous page.    | Pass      |
 | Success Message | A success message is displayed at the top of the screen when a user clicks on delete.  | Pass      |
 
-#### Register Page
+### Register Page
 | Feature               | Test Performed                                                     | Result    |
 |-----------------------|--------------------------------------------------------------------|-----------|
 | Responsiveness | The page is responsive on several different devices, browsers and screen widths. | Pass      |
@@ -262,7 +267,7 @@ Appearance and functionality appear to be consistent throughout all browsers.
 | Signup Button | On click the signup button will submit the user details, log them in and redirect them to the home page. | Pass      |
 | Success Message | Success message is displayed at the top of the screen when a user enters the correct details and clicks Sign Up. | Pass      |
 
-#### Login Page
+### Login Page
 | Feature               | Test Performed                                                     | Result    |
 |-----------------------|--------------------------------------------------------------------|-----------|
 | Responsiveness | The page is responsive on several different devices, browsers and screen widths. | Pass      |
@@ -273,7 +278,7 @@ Appearance and functionality appear to be consistent throughout all browsers.
 | Sign In Button | On click it will sign in the user if they have entered the right credentials. The user will get redirect to the home page. | Pass      |
 | Success Message | Success message is displayed at the top of the screen when a user enters the correct credentials and clicks Sign in. | Pass      |
 
-#### Logout Page
+### Logout Page
 | Feature               | Test Performed                                                     | Result    |
 |-----------------------|--------------------------------------------------------------------|-----------|
 | Responsiveness | The page is responsive on several different devices, browsers and screen widths. | Pass      |
