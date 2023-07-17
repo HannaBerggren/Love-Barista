@@ -31,6 +31,7 @@
 5. [Technologies Used](#technologies-used)
 6. [Testing](#testing)
 7. [Bugs](#bugs)
+8. [Fixed Bugs](#fixed-bugs)
 7. [Deployment](#deployment)
 8. [Credits](#credits)
 9. [Acknowledgements](#acknowledgements)
@@ -50,15 +51,15 @@
 
 Love Barista features a data store with full Create, Read, Update and Delete functionality.
 
-- Create - users can create a user account, and authenticated users can create a profile, collaboration requests and messages to their approved collaborators.
-- Read - users can view the profiles and posts of other users. Authenticated users can read messages sent to them.
-- Update - authenticated users can update their profiles and save the changes. They can approve collaboration requests sent to them wich results in a new many-to-many relationship in the database.
-- Delete - authenticated users can delete their profile and pending collaboration requests, chosing to cancelling, rejecting or approving them. Authenticated users can also delete messages sent by or to them, the message is not deleted from the database until both the sending and receiving users have marked them as deleted.
+- Create - users can create a user account and create a blogpost.
+- Read - users can view the posts of other users. Authenticated users can read comments about all blogposts.
+- Update - authenticated users can update their blogpost and save the changes.
+- Delete - authenticated users can delete their blogpost.
 
 ## UX Design:
 
 ### Wireframes
-Wireframes that where created in [Balsamiq](https://balsamiq.com/) for this project are displayed below. The wireframes were  created in the planning phase of the project. Please note that the wireframes might not be exactly a copy of the project due to the fact that the site has changed during development.
+Wireframes was created in [Balsamiq](https://balsamiq.com/) for this project and are displayed below. The wireframes were  created in the planning phase of the project. Please note that changes have been made during the course of the work.
 
 ![design image](/static/css/images/wireframe.png)
 
@@ -71,7 +72,7 @@ The user stories that where created can be found [here](https://github.com/users
 GitHub issues, milestones and projects were used to document and track an agile development approach.
 An issue was created for each user story. All user stories were then added to a 'Product Backlog' milestone [Link to product backlog](https://github.com/HannaBerggren/Love-Barista/milestone/1).
 
-I set up a plan for development this plan was just to show how it could work in real life. A milestone and a GitHub project board (a Kanban board) were created for each iteration, and user stories moved from the Product Backlog and into iterations as each cycle of work began. They were labelled as 'must have' goals for the iteration, and assigned story point values.
+I set up a plan for development and this was performed to see how it would work in real life. A milestone and a GitHub project board (a Kanban board) were created for each iteration, and user stories moved from the Product Backlog and into iterations as each cycle of work began. They were labelled as 'must have' goals for the iteration and assigned story point values.
 
 A project Kanban board was used to track progress, with user stories moved between 'Todo', 'In Progress' and 'Done' columns as appropriate. 
 ![Image](/static/css/images/kanbanboard.png)
@@ -84,11 +85,11 @@ A project Kanban board was used to track progress, with user stories moved betwe
 ### Icons and Images
 
 * All icons used throughout the site were provided by [Font Awesome](https://fontawesome.com/)
-* I sourced an icon from [Flaticon](https://www.flaticon.com). And then I used [Favicon](https://favicon.io/) to convert this png to an icon file and imported that to my site. I installed a Favicon to help users clarify this tab from others in their browser, a simple coffee-related design and with hearts because it felt like fun.
+* I sourced an icon from [Flaticon](https://www.flaticon.com). And then I used [Favicon](https://favicon.io/) to convert this png to an icon file and imported that to my site. I installed a Favicon to help users clarify this tab from others in their browser, a coffee-related design and with hearts because it felt like fun.
 
 ### Color Scheme
 
-* I decided to choose colors to get a warm and calm feeling. 
+* I chose colors from the design image, with some changes along the way to get a clean and calm feeling. 
 ![design image](/static/css/images/colors.png)
 
 I used [Coolors](https://coolors.co/) to generate a color scheme from the default post image. I chose a natural background color with complimentary colors in green, blue and orange for text, buttons and icons to make the sites content stand out to be clear to the user.
@@ -107,12 +108,12 @@ I created an entity relationship diagram using LucidCharts.
 
 ### Navigation Bar
 
-- The Navigation bar sits at the very top of each page, The logo is at the right hand side and the navigation links are on the left.
+- The Navigation bar sits at the very top of each page, The logo is at the left hand side and the navigation links are next to it, a short summary of the page is about is written on the right.
 - When logged in the **Login** becomes **Logout** and the **Registeration** link is removed.
 - The Navbar background is white with the Navigation links and logo in black and darkgreen colored text.
 - When the logo is clicked it redirects the user to the home page.
 - On large to xx-large screens the navigation bar covers the entire page.
-- When on medium to small screens the navigation menu changes to burger menu which shows all the nav links when clicked on (second two screenshot below).
+- When on medium to small screens the navigation menu changes to burger menu which shows all the nav links when clicked on (see the two screenshots below).
 
 ![NavBar](static/css/images/navbar.png)
 
@@ -136,9 +137,9 @@ Navigation bar on mobile and tablets
 
 ### Create blogpost
 
-* After you have register, after that when you click on your name in the navbar, you
+* After you have register, when you click on your name in the navbar, you
 can choose between the create blogpost page or the manage blogpost page.
-* Create a blogpost offers the user to easily pick when they want to make their post.
+* Create a blogpost offers the user to easily add content and upload a picture when they want to make their post.
 
 ![Image](/static/css/images/create-manage.png)
 ![Image](/static/css/images/shareblogpost.png)
@@ -151,7 +152,7 @@ can choose between the create blogpost page or the manage blogpost page.
 
 ### Logout page
 
-* This page is where the user can log out if they want.
+* This page is where the user can log out.
 
 ![Image](/static/css/images/sign-out.png)
 
@@ -187,7 +188,8 @@ can choose between the create blogpost page or the manage blogpost page.
 
 ### Future features
 
-* I would like to add a map function to point out where the location is
+* I would like to add a map function to point out where the location of the coffeeplaces is.
+* I would like to add a "cancel" button next to the "delete" button if the user change their mind about deleting a post. 
 * I would like to spend more time on the styling and make sure it looks even better.
 
 ## Technologies used
@@ -208,19 +210,22 @@ can choose between the create blogpost page or the manage blogpost page.
 * [Hostinger](https://www.hostinger.com/) - for adding favicon
 * [Flaticon](https://www.flaticon.com/) - for finding favicon
 * [Favicon](https://favicon.io/) - to generate the favicon and making download
+* [Markdown](https://www.markdownguide.org/) - for writing README.md and TESTING.md file
 
 ## Testing
 
 Please click [**_here_**](TESTING.md) to read more information about testing Love Barista.
 
 Admin Page
-* Admin has access via the default Django Admin page. The Admin login can be accessed from the navigation menus once a superuser has logged in. Once logged in, Admin users have all the access to create, edit and delete all bookings. All the requests can be viewed from the admin page.
-
-* Love Barista is a blog post for everyone who likes or love coffee. This app is a blog designed so that visitors and staff easily can manage the posts by them self. Both parties can post, view, change and delete their blogposts as per their own liking.
+* Admin has access via the default Django Admin page. The Admin login can be accessed from the navigation menus once a superuser has logged in. Once logged in, Admin users have all the access to create, edit and delete all posts. All the requests can be viewed from the admin page.
 
 ## Bugs
 
 * None that I'm aware of
+
+## Fixed bugs
+
+* Had trouble getting the delete/update buttons to appear, but solved it when I realized I forgot to write the code for the buttons.
 
 ## Deployment
 
